@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+}
+
+@section Style{
+
+    <link rel="stylesheet" href="~/assets/scss/pages/contactpage/contactpage.css" />
+}
+
+<main>
+
+    <section id="map">
+        <div class="container-fluid">
+            <h2>We’d love to hear from you.</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4995031203152!2d49.8770297752524!3d40.37562075814151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d1b7a2b212f%3A0x687e35462fd6f4df!2zQcSfIMWeyZloyZlyIEJ1bHZhcsSx!5e0!3m2!1sen!2saz!4v1685884653177!5m2!1sen!2saz"
+                    width="1200" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="contactinfos">
+                            <div class="icon">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="info">
+                                <h5>Get in Touch </h5>
+                                <p>Telephone:+703.172.3412</p>
+                                <p>Fax:+703.172.2341</p>
+                                <a href="">hello@example.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="contactinfos">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="info">
+                                <h5>Visit Us</h5>
+                                <p>Tarup 5210, Odense kommune,Danmark</p>
+                                <p>Monday to Friday: 10am to 7pm</p>
+                                <a href="">Get Directions</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="contactinfos">
+                            <div class="icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div class="info">
+                                <h5>Work with Us?</h5>
+                                <p>Etsy mustache selfies Brooklyn letterpress artisan swag.</p>
+                                <a href="">apply.example.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+@section Script{
+
+    <script src="~/assets/js/contact.js"></script>
+}

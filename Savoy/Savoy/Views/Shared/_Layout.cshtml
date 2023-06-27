@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/scss/pages/homepage/homepage.css">
+    @await RenderSectionAsync("Style",required:false)
+    <title>@ViewBag.Title</title>
+</head>
+
+<body>
+
+
+    <header>
+        <section id="navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="navleft">
+                            <ul>
+                                <li>
+                                    <a asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                <li>
+                                    <a class="shopBtn" asp-controller="Shop" asp-action="Index">Shop</a>
+                                </li>
+                                <li>
+                                    <a class="categoriesBtn" asp-controller="Category" asp-action="Index">Categories<sup>NEW</sup></a>
+                                </li>
+                                <li>
+                                    <a class="pagesBtn" asp-controller="Home" asp-action="Index" >Pages</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <div class="logimg">
+                            <a asp-controller="Home" asp-action="Index">
+                                <img src="~/assets/image/HeaderLogo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-sm-12">
+                        <div class="navright">
+                            <ul>
+                                <li><a asp-controller="Wishlist" asp-action="Index"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a asp-controller="Login" asp-action="Index" >Sign In</a></li>
+                                <li><a asp-controller="Cart" asp-action="Index">Cart<sup>0</sup></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-pages d-none">
+                    <ul>
+                        <li><a asp-controller="Cart" asp-action="Index">Cart</a></li>
+                        <li><a asp-controller="Checkout" asp-action="Index">Checkout</a></li>
+                        <li><a asp-controller="Wishlist" asp-action="Index">Wishlist</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-12">
+                    <div class="categoriestitle d-none">
+
+                        <div class="col-lg-3">
+                            <div class="bags">
+                                <img src="~/assets/image/bags.jpg" alt="">
+                                <span>Bags & Backpacks</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+
+                            <div class="decoration">
+                                <img src="~/assets/image/decor.jpg" alt="">
+                                <span>Decoration</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <div class="essentials">
+                                <img src="~/assets/image/aksesuar.jpg" alt="">
+                                <span>Essentials</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2">
+                            <div class="interior">
+                                <img src="~/assets/image/interrior.jpg" alt="">
+                                <span>Interior</span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="allcategories">
+                                <img src="~/assets/image/allcategories.jpg" alt="">
+                                <span>Shop All</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pages d-none">
+                    <ul>
+                        <li><a asp-controller="About" asp-action="Index">About</a></li>
+                        <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                        <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                        <li><a asp-controller="Checkout" asp-action="Index">Checkout</a></li>
+                        <li><a asp-controller="Cart" asp-action="Index">Cart</a></li>
+                        <li><a asp-controller="Wishlist" asp-action="Index">Wishlist</a></li>
+                        <li><a asp-controller="Register" asp-action="Index">Sign Up</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </header>
+
+        @RenderBody()
+
+    <footer>
+        <section id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-5 col-sm-4">
+                        <div class="footerimg">
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i> Amsterdam, Netherlands</li>
+                                <li><i class="fa-solid fa-envelope"></i> hello@example.com</li>
+                                <li><i class="fa-solid fa-phone"></i> +703.172.3412</li>
+                            </ul>
+                            <img src="~/assets/image/footerpayment.webp" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-4">
+                        <div class="footerpage">
+                            <ul>
+                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li><a asp-controller="About" asp-action="Index">About</a></li>
+                                <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
+                                <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                                <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
+                            </ul>
+                            <p>© SINCE 1985</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-4">
+                        <div class="footersocial">
+                            <ul>
+                                <li><a target="_blank" asp-host="www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a target="_blank" asp-host="www.twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a target="_blank" asp-host="www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a target="_blank" asp-host="www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                                <li><a target="_blank" asp-host="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+     <script src="https://kit.fontawesome.com/e29b1b43d1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="~/assets/js/home.js"></script>
+    @await RenderSectionAsync("Script",required:false)
+
+
+</body>
+</html>

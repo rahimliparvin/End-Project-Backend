@@ -1,0 +1,183 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+@section Style{
+
+    <link rel="stylesheet" href="~/assets/scss/pages/checkoutpage/checkoutpage.css" />
+}
+
+<main>
+    <section id="checkout">
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+
+                    <div class="billingdetails">
+
+                        <h2>Billing Details</h2>
+
+                        <form>
+
+                            <div class="first-lastname">
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label> First name (required)*</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Last name (required)*</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+
+                            </div>
+
+                            <div class="companyname-address-city">
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Company name (optional)</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Address</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Town/city</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+                            </div>
+
+                            <div class="state-postcode">
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>State / Country(required)*</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Postcode / zip (required)*</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+
+                            </div>
+
+                            <div class="email-phone">
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Email Address(required)*</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+
+                                <div class="group">
+                                    <input type="text" required>
+                                    <span class="highlight"></span>
+                                    <span class="bar"></span>
+                                    <label>Phone(required)*</label>
+                                    <span class="please">Please enter a valid message</span>
+                                </div>
+
+                            </div>
+
+                            <div class="additionalinformation">
+
+                                <h2>Additional information</h2>
+                                <span class="orderspan">Order notes(optional)</span>
+                                <span class="post">Post content</span>
+                                <textarea></textarea>
+
+                                <button type="submit"><span>Submit Review</span></button>
+                            </div>
+
+                        </form>
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+
+
+                    <div class="productsaleinfos">
+
+                        <div class="product-total">
+                            <h5>Product</h5><span>Total</span>
+
+                        </div>
+
+                        <ul class="productscart">
+                            <p>There are no products in cart</p>
+                        </ul>
+
+                        <ul class="subtotalprice">
+                            <li>
+                                <h5>Subtotal</h5> <span>$</span><span>0</span><span>.00</span>
+                            </li>
+                        </ul>
+
+
+                        <ul class="totalprice">
+                            <li>
+                                <h5>Total</h5> <span>$</span><span>0</span><span>.00</span>
+                            </li>
+                        </ul>
+
+                        <div class="input">
+                            <div class="directbank">
+                                <input name="a" type="radio"><span>Direct Bank Transfer</span>
+                            </div>
+                            <div class="paypal">
+                                <input name="a" type="radio"><span>PayPal</span>
+                            </div>
+                            <button type="submit"><span>Place order</span></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
+
+
+@section Script{
+
+    <script src="~/assets/js/checkout.js"></script>
+}

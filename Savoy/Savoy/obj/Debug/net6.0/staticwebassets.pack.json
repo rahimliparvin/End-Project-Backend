@@ -1,0 +1,557 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\Clockslider.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\Clockslider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\HeaderLogo.png",
+      "PackagePath": "staticwebassets\\assets\\image\\HeaderLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\aboutimage.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\aboutimage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\aksesuar.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\aksesuar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\allcategories.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\allcategories.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\anthonymoreimg.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\anthonymoreimg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\bag1.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\bag1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\bag2.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\bag2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\bags.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\bags.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\blog-image-clock.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\blog-image-clock.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\blog-image-notebooks.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\blog-image-notebooks.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\bloginspirationimg.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\bloginspirationimg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\clientimage.png",
+      "PackagePath": "staticwebassets\\assets\\image\\clientimage.png"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\clientsayspp.png",
+      "PackagePath": "staticwebassets\\assets\\image\\clientsayspp.png"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\decor.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\decor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\douglasmorganimg.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\douglasmorganimg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\essentials-slider.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\essentials-slider.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\footerlogo.png",
+      "PackagePath": "staticwebassets\\assets\\image\\footerlogo.png"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\footerpayment.webp",
+      "PackagePath": "staticwebassets\\assets\\image\\footerpayment.webp"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\interior1.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\interior1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\interrior.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\interrior.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\interrior2.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\interrior2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\kimberlymillerimg.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\kimberlymillerimg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\lighthouse1.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\lighthouse1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\lighthouse2.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\lighthouse2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\logbackground.webp",
+      "PackagePath": "staticwebassets\\assets\\image\\logbackground.webp"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\loginbackground2.webp",
+      "PackagePath": "staticwebassets\\assets\\image\\loginbackground2.webp"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\slider-black-lamp.jpg",
+      "PackagePath": "staticwebassets\\assets\\image\\slider-black-lamp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\blog.js",
+      "PackagePath": "staticwebassets\\assets\\js\\blog.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\cart.js",
+      "PackagePath": "staticwebassets\\assets\\js\\cart.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\checkout.js",
+      "PackagePath": "staticwebassets\\assets\\js\\checkout.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\home.js",
+      "PackagePath": "staticwebassets\\assets\\js\\home.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\login.js",
+      "PackagePath": "staticwebassets\\assets\\js\\login.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\register.js",
+      "PackagePath": "staticwebassets\\assets\\js\\register.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\shop.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shop.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\shopdetail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shopdetail.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\js\\wishlist.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wishlist.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\aboutpage\\aboutpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\aboutpage\\aboutpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\aboutpage\\aboutpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\aboutpage\\aboutpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\aboutpage\\aboutpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\aboutpage\\aboutpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\blogdetailpage\\blogdetailpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\blogdetailpage\\blogdetailpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\blogdetailpage\\blogdetailpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\blogdetailpage\\blogdetailpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\blogdetailpage\\blogdetailpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\blogdetailpage\\blogdetailpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\blogpage\\blogpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\blogpage\\blogpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\blogpage\\blogpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\blogpage\\blogpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\blogpage\\blogpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\blogpage\\blogpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\cartpage\\cartpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\cartpage\\cartpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\cartpage\\cartpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\cartpage\\cartpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\cartpage\\cartpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\cartpage\\cartpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\checkoutpage\\checkoutpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\checkoutpage\\checkoutpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\checkoutpage\\checkoutpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\checkoutpage\\checkoutpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\checkoutpage\\checkoutpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\checkoutpage\\checkoutpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\contactpage\\contactpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\contactpage\\contactpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\contactpage\\contactpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\contactpage\\contactpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\contactpage\\contactpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\contactpage\\contactpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\homepage\\homepage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\homepage\\homepage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\homepage\\homepage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\homepage\\homepage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\homepage\\homepage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\homepage\\homepage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\loginpage\\loginpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\loginpage\\loginpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\loginpage\\loginpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\loginpage\\loginpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\loginpage\\loginpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\loginpage\\loginpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\registerpage\\registerpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\registerpage\\registerpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\registerpage\\registerpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\registerpage\\registerpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\registerpage\\registerpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\registerpage\\registerpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\shopdetailpage\\shopdetailpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\shopdetailpage\\shopdetailpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\shopdetailpage\\shopdetailpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\shopdetailpage\\shopdetailpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\shopdetailpage\\shopdetailpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\shopdetailpage\\shopdetailpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\shoppage\\shoppage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\shoppage\\shoppage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\shoppage\\shoppage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\shoppage\\shoppage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\shoppage\\shoppage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\shoppage\\shoppage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\wishlistpage\\wishlistpage.css",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\wishlistpage\\wishlistpage.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\wishlistpage\\wishlistpage.css.map",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\wishlistpage\\wishlistpage.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\scss\\pages\\wishlistpage\\wishlistpage.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\pages\\wishlistpage\\wishlistpage.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\slick\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\slick\\slick.css.map",
+      "PackagePath": "staticwebassets\\assets\\slick\\slick.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\assets\\slick\\slick.scss"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Savoy.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Savoy.props",
+      "PackagePath": "build\\Savoy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Savoy.props",
+      "PackagePath": "buildMultiTargeting\\Savoy.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Savoy.props",
+      "PackagePath": "buildTransitive\\Savoy.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
