@@ -1,8 +1,5 @@
 "use strict";
 
-
-
-
 //let shopBtn = document.querySelector(".shopBtn");
 
 
@@ -53,7 +50,7 @@
 //    })
 //});
 
-///////////////////////// 
+/////////////////////////
 
 
 //let pagesBtn = document.querySelector(".pagesBtn");
@@ -84,27 +81,32 @@
 
 ///////////////// Tab-Menu /////////////////
 
-let headersTab = document.querySelectorAll("#blogpage .tabmenu .item");
 
-let contentsTab = document.querySelectorAll("#blogpage .content .item");
+//let headersBlog = document.querySelectorAll("#blogpage .tabmenu .item");
 
-headers.forEach(element => {
-    element.addEventListener("click", function(){
-        document.querySelector("#blogpage .tabmenu .active").classList.remove("active");
-        this.classList.add("active");
+//let contentsBlog = document.querySelectorAll("#blogpage .content .item");
 
-        contents.forEach(content => {
-          if(content.getAttribute("data-id") == this.getAttribute("data-id"))
-          {
-            content.classList.remove("d-none");
-          }
-          else{
-            content.classList.add("d-none");
-          }
-        });
+//headersBlog.forEach(element => {
+//    element.addEventListener("click", function () {
+//        document.querySelector("#blogpage .tabmenu .active").classList.remove("active");
+//        this.classList.add("active");
 
-    })
-});
+//        contentsBlog.forEach(content => {
+//            if (content.getAttribute("data-id") == this.getAttribute("data-id")) {
+//                content.classList.remove("d-none");
+//            }
+//            else {
+//                content.classList.add("d-none");
+//            }
+//        });
+
+//    })
+//});
+
+
+
+
+
 
 ///////////////// BlogPlus d-none ///////////////
 
@@ -132,3 +134,39 @@ cartImgs.forEach(cartImg => {
     });
 
 });
+
+
+$(document).on("click", ".categoriesName", function () {
+
+    let categoryId = $(this).attr("data-id")
+    let changeElem = $(this)
+
+    let data = { id: categoryId }
+
+    $.ajax({
+        url: "Blog/GetCategoryBlogs",
+        type: "Get",
+        data: data,
+        success: function (res) {
+            $(".content").html(res)
+
+        }
+    })
+})
+
+
+
+$(document).on("click", ".allCategoriesName", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+
+    $.ajax({
+        url: "Blog/GetAllCategoriesBlogs",
+        type: "Get",
+        success: function (res) {
+            $(".content").html(res)
+
+        }
+    })
+})

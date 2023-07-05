@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Blog>
+
+
+    <div class="item">
+
+        @foreach (var blog in Model)
+        {
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="blogcart">
+                    <div class="cartimg">
+                        <img src="~/assets/image/@blog.Images.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                    </div>
+                    <div class="blogplus d-none">
+                        <a asp-route-id="@blog.Id" asp-action="detail"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <span>@blog.Created.ToString("dd MMMM yyyy")</span>
+                    <h2><a asp-action="Detail" asp-route-id="@blog.Id">@blog.Title</a></h2>
+                    <p>
+                      @blog.Description.Substring(0,150) ...
+                    </p>
+                    <a asp-controller="Blog" asp-action="Detail" asp-route-id="@blog.Id"><span>More</span><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        }
+
+
+
+    </div>

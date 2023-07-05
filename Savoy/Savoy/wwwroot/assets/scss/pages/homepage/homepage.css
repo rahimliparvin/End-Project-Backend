@@ -740,16 +740,23 @@ swiper-container swiper-slide img {
   border-radius: 20px;
 }
 
-#latestblog .container-fluid .blog h5 {
+#latestblog .container-fluid a {
+  text-decoration: none;
   color: #dc9814;
   font-size: 19px;
 }
 
-#latestblog .container-fluid .blog h5 span {
+#latestblog .container-fluid .blog a h5 {
+  color: #dc9814;
+  font-size: 19px;
+}
+
+#latestblog .container-fluid .blog a h5 span {
   margin-left: 10px;
 }
 
-#latestblog .container-fluid .blog h2 {
+#latestblog .container-fluid .blog h2 a{
+  text-decoration:none;
   color: #282828;
   margin-top: 20px;
   font-size: 24px;

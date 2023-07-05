@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ShopVM
+
+@{
     ViewData["Title"] = "Shop";
 }
 
@@ -17,10 +19,12 @@
                     <div class="categoriesname">
                         <ul>
                             <li data-id="All" class="active">All<span>/</span></li>
-                            <li data-id="Bags&Backpacks">Bags & Backpacks<span>/</span></li>
-                            <li data-id="Decoration">Decoration<span>/</span></li>
-                            <li data-id="Essentials">Essentials<span>/</span></li>
-                            <li data-id="Interior">Interior</li>
+                          
+                            @foreach (var category in Model.Categories)
+                            {
+                                  <li data-id="Bags&Backpacks">@category.Name<span>/</span></li>
+                            }
+                            
                         </ul>
                     </div>
                 </div>
@@ -67,31 +71,23 @@
                     <div class="col-lg-3">
                         <h5>Color</h5>
                         <ul class="color">
-                            <li><i class="fa-solid fa-circle"></i><span>Blue</span></li>
-                            <li><i class="fa-solid fa-circle"></i><span>Brown</span></li>
-                            <li><i class="fa-solid fa-circle"></i><span>Gray</span></li>
-                            <li><i class="fa-solid fa-circle"></i><span>Green</span></li>
-                            <li><i class="fa-solid fa-circle"></i><span>Orange</span></li>
-                            <li><i class="fa-solid fa-circle"></i><span>White</span></li>
+                          
+                            @foreach (var color in Model.Colors)
+                            {
+                                  <li><i class="fa-solid fa-circle"></i><span>@color.Name</span></li>
+                            }
+                            
                         </ul>
                     </div>
                     <div class="col-lg-3">
                         <div class="tags">
                             <h5>Tags</h5>
-                            <span>Bathroom</span>
-                            <span>Classic</span>
-                            <span>Contemporary</span>
-                            <span>Decor</span>
-                            <span>Essentials</span>
-                            <span>Grooming</span>
-                            <span>Interior</span>
-                            <span>Kitchen</span>
-                            <span>Leather</span>
-                            <span>Lighting</span>
-                            <span>Minimal</span>
-                            <span>Practical</span>
-                            <span>Tableware</span>
-                            <span>Travel</span>
+                           
+                            @foreach (var tag in Model.Tags)
+                            {
+                                 <span>@tag.Name</span>
+                            }
+                           
                         </div>
                     </div>
                 </div>

@@ -34,19 +34,23 @@
   #blogpage .content {
     width: 100%;
   }
-  #blogpage .content .item {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
+    #blogpage .content .item {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  #blogpage .content .item .blogcart {
-    width: 280px !important;
-    height: 798px;
-    position: relative;
-  }
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    #blogpage .content .item .blogcart {
+        width: 280px !important;
+        height: 798px;
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
   #blogpage .content .item .blogcart .blogplus {
     width: 280px !important;
     height: 513px;

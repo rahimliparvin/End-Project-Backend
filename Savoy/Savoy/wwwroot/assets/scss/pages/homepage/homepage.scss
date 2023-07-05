@@ -807,44 +807,46 @@ swiper-container {
 
 
 #latestblog {
-
     margin-top: 65px;
     margin-bottom: 65px;
 
     .container-fluid {
-
         padding-left: 65px;
         padding-right: 65px;
 
         .col-lg-4 {
-
             padding: 0px;
-
         }
 
         .blog {
-
             width: 90%;
             padding: 20px;
             background: #f6f7fb;
             margin: auto;
             border-radius: 20px;
 
-            h5 {
-
+            a {
+                text-decoration: none;
                 color: #dc9814;
                 font-size: 19px;
 
-                span{
+                h5 {
 
-                    margin-left: 10px;
+
+                    span {
+                        margin-left: 10px;
+                    }
                 }
             }
 
             h2 {
-                color: #282828;
-                margin-top: 20px;
-                font-size: 24px;
+
+                a {
+                    text-decoration:none;
+                    color: #282828;
+                    margin-top: 20px;
+                    font-size: 24px;
+                }
             }
 
             p {
@@ -854,7 +856,6 @@ swiper-container {
             }
 
             .blogimg {
-
                 width: 100%;
                 height: 335px;
                 margin: auto;
@@ -866,8 +867,6 @@ swiper-container {
                     object-fit: revert;
                 }
             }
-
-
         }
     }
 }
