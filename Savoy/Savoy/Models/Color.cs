@@ -4,7 +4,6 @@
     {
         public string Name { get;set; }
         public ICollection<ProductColor> ProductColors { get; set; }
-        public ICollection<ProductImage> ProductImages { get; set; }
 
     }
 }

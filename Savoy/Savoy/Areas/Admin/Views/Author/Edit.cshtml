@@ -1,0 +1,23 @@
+﻿@using ProniaBackEndProject.Areas.Admin.ViewModels.AuthorVM;
+@model AuthorEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<div style="padding-left:200px" class="container my-5">
+
+    <form class="forms-sample" style="display:inline-block" asp-action="Edit" method="post" enctype="multipart/form-data">
+
+        <div class="form-group my-3">
+            <label>Add New Title</label>
+            <input class="form-control" type="text" id="customFile" asp-for="Name" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+        <div class="buttons my-3">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <a asp-action="Index" class="btn btn-light">Cancel</a>
+        </div>
+    </form>
+</div>
+

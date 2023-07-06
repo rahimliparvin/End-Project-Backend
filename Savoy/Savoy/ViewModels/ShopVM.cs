@@ -7,5 +7,6 @@ namespace Savoy.ViewModels
         public IEnumerable<Color> Colors { get; set; }
         public IEnumerable<Tag> Tags { get; set; }
         public IEnumerable<Category> Categories { get; set; }
+        public IEnumerable<Product> Products { get; set; }
     }
 }

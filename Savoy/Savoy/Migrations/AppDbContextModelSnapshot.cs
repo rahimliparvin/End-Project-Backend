@@ -399,9 +399,6 @@ namespace Savoy.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("ColorId")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("Created")
                         .HasColumnType("datetime2");
 
@@ -424,8 +421,6 @@ namespace Savoy.Migrations
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ColorId");
 
                     b.HasIndex("ProductId");
 
@@ -654,19 +649,11 @@ namespace Savoy.Migrations
 
             modelBuilder.Entity("Savoy.Models.ProductImage", b =>
                 {
-                    b.HasOne("Savoy.Models.Color", "Color")
-                        .WithMany("ProductImages")
-                        .HasForeignKey("ColorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Savoy.Models.Product", "Product")
                         .WithMany("ProductImages")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Color");
 
                     b.Navigation("Product");
                 });
@@ -710,8 +697,6 @@ namespace Savoy.Migrations
             modelBuilder.Entity("Savoy.Models.Color", b =>
                 {
                     b.Navigation("ProductColors");
-
-                    b.Navigation("ProductImages");
                 });
 
             modelBuilder.Entity("Savoy.Models.Product", b =>

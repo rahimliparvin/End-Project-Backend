@@ -1,4 +1,5 @@
-﻿
+﻿@model ShopDetailVM
+
 @{
     ViewData["Title"] = "Shop Detail";
 }
@@ -18,22 +19,29 @@
                         <ul>
                             <li>Shop</li>
                             <li>/</li>
-                            <li>Interior</li>
+                            @foreach (var category in Model.ProductCategories)
+                            {
+                                <li>@category</li>
+                            }
                             <li>/</li>
-                            <li>Modern Shell Chair</li>
+                            <li>@Model.Name</li>
                         </ul>
                     </div>
                     <div id="carouselExampleFade" class="carousel slide carousel-fade">
                         <div class="carousel-inner">
+
                             <div class="carousel-item active">
-                                <img src="~/assets/image/interior1.jpg" class="d-block w-100" alt="...">
+                                <img src="~/assets/image/@Model.ProductImages.FirstOrDefault()" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item">
-                                <img src="~/assets/image/Clockslider.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="~/assets/image/bloginspirationimg.jpg" class="d-block w-100" alt="...">
-                            </div>
+
+
+                            @foreach (var image in Model.ProductImages.Skip(1))
+                            {
+                                <div class="carousel-item">
+                                    <img src="~/assets/image/@image" class="d-block w-100" alt="...">
+                                </div>
+                            }
+
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                                 data-bs-slide="prev">
@@ -51,22 +59,26 @@
 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="productinfos">
-                        <h3>Modern Shell Chair</h3>
-                        <span>$</span><span>208.00</span>
+                        <h3>@Model.Name</h3>
+                        <span>$</span><span>@Model.Price</span>
                         <p>
                             Designed for simplicity and made from high quality materials. Its sleek geometry and
                             material combinations creates a modern personalized look.
                         </p>
                         <div class="rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                          
+                           @for (int i = 0; i < Model.RatesWorth / Model.RatesCount; i++)
+                            {
+                                <i class="fa-regular fa-star"></i>
+                            }
+
                         </div>
                         <select name="" id="">
-                            <option selected default value="">Black</option>
-                            <option value="">White</option>
+                            <option selected default value="">@Model.ProductColors.FirstOrDefault()</option>
+                           @foreach (var color in Model.ProductColors.Skip(1))
+                            {
+                                <option value="">@color</option>
+                            }
                         </select>
                         <div class="quantity">
 
@@ -104,12 +116,7 @@
                     <div class="content">
                         <div data-id="1" class="descriptioninfo">
                             <p>
-                                Authentic keffiyeh master cleanse. Fingerstache semiotics PBR quinoa. Pop-up Godard
-                                kale
-                                chips, trust fund Neutra fingerstache paleo Wes Anderson. Deep v single-origin
-                                coffee
-                                cred Thundercats beard. Mumblecore before they sold out roof party biodiesel. Banksy
-                                swag Portland readymade synth messenger bag cliche.
+                              @Model.Description
                             </p>
                         </div>
 
@@ -119,23 +126,19 @@
                                 <thead>
                                     <tr>
                                         <td>Weight</td>
-                                        <td>1.73 kg</td>
+                                        <td>@Model.Weight</td>
                                     </tr>
                                     <tr>
                                         <td>Dimensions</td>
-                                        <td>100 x 37 x 100 cm</td>
+                                        <td>@Model.Dimensions</td>
                                     </tr>
                                     <tr>
                                         <td>Materials</td>
-                                        <td>80% cotton, 20% linen</td>
+                                        <td>@Model.Materials</td>
                                     </tr>
                                     <tr>
                                         <td>Other Info</td>
-                                        <td>American heirloom jean shorts pug seitan letterpress.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Size</td>
-                                        <td>One Size, XL, L, M, S</td>
+                                        <td>@Model.OtherInfo</td>
                                     </tr>
                                 </thead>
                             </table>
@@ -144,9 +147,19 @@
                 </div>
                 <div class="tag">
                     <ul>
-                        <li>SKU: <span> 73253-55</span></li>
-                        <li>Category: <span>Interior</span></li>
-                        <li>Tags: <span>Classic, Interior, Leather</span></li>
+                        <li>SKU: <span> @Model.Sku</span></li>
+                        <li>Category:
+                            @foreach (var category in Model.ProductCategories)
+                            {
+                                <span>@category</span>
+                            }
+                        </li>
+                        <li>Tags: @foreach (var tag in Model.ProductTags)
+                            {
+                                <span>@tag</span>
+
+                            }
+                        </li>
                     </ul>
                 </div>
             </div>

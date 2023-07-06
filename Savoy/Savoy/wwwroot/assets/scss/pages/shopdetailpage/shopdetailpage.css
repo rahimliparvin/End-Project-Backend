@@ -447,9 +447,10 @@
   height: 737px;
 }
 
-#carouselshop .container-fluid .carousel-fade .carousel-item img {
-  height: 737px;
-}
+    #carouselshop .container-fluid .carousel-fade .carousel-item img {
+        height: 737px;
+        object-fit: none;
+    }
 
 #carouselshop .container-fluid .carousel-fade .carousel-control-next-icon {
   background-color: #686868;

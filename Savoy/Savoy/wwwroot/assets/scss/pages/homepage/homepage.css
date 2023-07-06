@@ -245,7 +245,12 @@
   border-right: 1px solid #EEEEEE;
 }
 
-#navigation .categoriestitle .col-lg-2 .decoration img {
+    #navigation .categoriestitle .col-lg-2 .decoration a {
+     
+        text-decoration:none;
+    }
+
+#navigation .categoriestitle .col-lg-2 .decoration a img {
   width: 80px;
   height: 80px;
   -o-object-fit: cover;
@@ -258,28 +263,33 @@
   margin-bottom: 20px;
 }
 
-#navigation .categoriestitle .col-lg-2 .decoration img:hover {
+#navigation .categoriestitle .col-lg-2 .decoration a img:hover {
   width: 85px;
   height: 85px;
 }
 
-#navigation .categoriestitle .col-lg-2 .decoration span {
+#navigation .categoriestitle .col-lg-2 .decoration a span {
   color: #686868;
   font-size: 14px;
 }
 
-#navigation .categoriestitle .col-lg-2 .decoration span:hover {
+#navigation .categoriestitle .col-lg-2 .decoration a span:hover {
   color: #dc9814;
 }
 
-#navigation .categoriestitle .col-lg-2 .essentials {
+#navigation .categoriestitle .col-lg-2  .essentials {
   width: 100%;
   margin-bottom: 30px;
   padding: 0px;
   border-right: 1px solid #EEEEEE;
 }
 
-#navigation .categoriestitle .col-lg-2 .essentials img {
+    #navigation .categoriestitle .col-lg-2 .essentials a {
+     
+        text-decoration:none;
+    }
+
+#navigation .categoriestitle .col-lg-2 .essentials a img {
   width: 80px;
   height: 80px;
   -o-object-fit: cover;
@@ -292,17 +302,17 @@
   margin-bottom: 20px;
 }
 
-#navigation .categoriestitle .col-lg-2 .essentials img:hover {
+#navigation .categoriestitle .col-lg-2 .essentials a img:hover {
   width: 85px;
   height: 85px;
 }
 
-#navigation .categoriestitle .col-lg-2 .essentials span {
+#navigation .categoriestitle .col-lg-2 .essentials a span {
   color: #686868;
   font-size: 14px;
 }
 
-#navigation .categoriestitle .col-lg-2 .essentials span:hover {
+#navigation .categoriestitle .col-lg-2 .essentials a span:hover {
   color: #dc9814;
 }
 
@@ -313,7 +323,11 @@
   border-right: 1px solid #EEEEEE;
 }
 
-#navigation .categoriestitle .col-lg-2 .interior img {
+    #navigation .categoriestitle .col-lg-2 .interior a {
+        text-decoration:none;
+    }
+
+#navigation .categoriestitle .col-lg-2 .interior a img {
   width: 80px;
   height: 80px;
   -o-object-fit: cover;
@@ -326,17 +340,17 @@
   margin-bottom: 20px;
 }
 
-#navigation .categoriestitle .col-lg-2 .interior img:hover {
+#navigation .categoriestitle .col-lg-2 .interior a img:hover {
   width: 85px;
   height: 85px;
 }
 
-#navigation .categoriestitle .col-lg-2 .interior span {
+#navigation .categoriestitle .col-lg-2 .interior a span {
   color: #686868;
   font-size: 14px;
 }
 
-#navigation .categoriestitle .col-lg-2 .interior span:hover {
+#navigation .categoriestitle .col-lg-2 .interior a span:hover {
   color: #dc9814;
 }
 
@@ -353,7 +367,12 @@
   text-align: center;
 }
 
-#navigation .categoriestitle .col-lg-3 .bags img {
+    #navigation .categoriestitle .col-lg-3 .bags a {
+       
+        text-decoration:none;
+    }
+
+#navigation .categoriestitle .col-lg-3 .bags a img {
   width: 80px;
   height: 80px;
   -o-object-fit: cover;
@@ -366,17 +385,17 @@
   margin-bottom: 20px;
 }
 
-#navigation .categoriestitle .col-lg-3 .bags img:hover {
+#navigation .categoriestitle .col-lg-3 .bags a img:hover {
   width: 85px;
   height: 85px;
 }
 
-#navigation .categoriestitle .col-lg-3 .bags span {
+#navigation .categoriestitle .col-lg-3 .bags a span {
   color: #686868;
   font-size: 14px;
 }
 
-#navigation .categoriestitle .col-lg-3 .bags span:hover {
+#navigation .categoriestitle .col-lg-3 .bags a span:hover {
   color: #dc9814;
 }
 
@@ -386,7 +405,11 @@
   padding: 0px;
 }
 
-#navigation .categoriestitle .col-lg-3 .allcategories img {
+    #navigation .categoriestitle .col-lg-3 .allcategories a {
+      text-decoration:none;
+    }
+
+#navigation .categoriestitle .col-lg-3 .allcategories a img {
   width: 80px;
   height: 80px;
   -o-object-fit: cover;
@@ -399,17 +422,17 @@
   margin-bottom: 20px;
 }
 
-#navigation .categoriestitle .col-lg-3 .allcategories img:hover {
+#navigation .categoriestitle .col-lg-3 .allcategories a img:hover {
   width: 85px;
   height: 85px;
 }
 
-#navigation .categoriestitle .col-lg-3 .allcategories span {
+#navigation .categoriestitle .col-lg-3 .allcategories a span {
   color: #686868;
   font-size: 14px;
 }
 
-#navigation .categoriestitle .col-lg-3 .allcategories span:hover {
+#navigation .categoriestitle .col-lg-3 .allcategories a span:hover {
   color: #dc9814;
 }
 

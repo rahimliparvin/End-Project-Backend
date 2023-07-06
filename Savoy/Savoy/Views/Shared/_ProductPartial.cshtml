@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Product>
+
+<div class="item">
+
+    @foreach (var product in Model)
+    {
+        <div class="col-lg-3">
+            <div class="productcart">
+              @*  <p>@product.Created.ToString("dd MMMM yyyy")</p>*@
+                <img class="firstimg" src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                <a asp-controller="Shop" asp-action="Detail" asp-route-id="@product.Id">
+                    <img class="secondimg"
+                     src="~/assets/image/@product.ProductImages.Where(m=>m.HoverImage).FirstOrDefault()?.Image" alt="">
+                </a>
+                <div class="productinfo">
+                    <a asp-action="Detail" asp-route-id="@product.Id"><h6>@product.Name</h6></a>
+                    <div class="pricelike">
+                        <span class="pricecurrency">$<span>@product.Price</span></span>
+                        <i class="fa-regular fa-heart like"></i>
+                        <i class="fa-solid fa-heart dislike d-none"></i>
+                    </div>
+                    <form>
+                        <button type="submit" class="showmore">Add to cart</button>
+                    </form>
+                    <div class="rating">
+                       
+                        @for (int i = 0; i < product.RatesWorth / product.RatesCount; i++)
+                        {
+                            <i class="fa-solid fa-star"></i>
+                        }
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

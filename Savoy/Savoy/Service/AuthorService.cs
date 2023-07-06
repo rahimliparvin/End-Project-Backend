@@ -14,7 +14,10 @@ namespace Savoy.Service
             _context = context;
         }
 
-        public async Task<IEnumerable<Author>> GetAllAsync() => await _context.Authors.Include(m=>m.Blogs). 
+        public async Task<IEnumerable<Author>> GetAllAsync() => await _context.Authors.Include(m=>m.Blogs).
+                                                                                       Where(m=>!m.SoftDelete).
                                                                                        ToListAsync();
+
+        public async Task<Author> GetFullDataByIdAsync(int id) => await _context.Authors.FindAsync(id);
     }
 }

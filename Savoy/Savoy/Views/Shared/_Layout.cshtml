@@ -71,37 +71,47 @@
 
                         <div class="col-lg-3">
                             <div class="bags">
-                                <img src="~/assets/image/bags.jpg" alt="">
-                                <span>Bags & Backpacks</span>
+                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-id="1" data-id="1">
+                                    <img src="~/assets/image/bags.jpg" alt="">
+                                    <span>Bags & Backpacks</span>
+                               </a>
                             </div>
                         </div>
 
                         <div class="col-lg-2">
 
                             <div class="decoration">
-                                <img src="~/assets/image/decor.jpg" alt="">
+                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-id="2" data-id="2">
+                                    <img src="~/assets/image/decor.jpg" alt="">
                                 <span>Decoration</span>
+                               </a>
                             </div>
                         </div>
 
                         <div class="col-lg-2">
                             <div class="essentials">
-                                <img src="~/assets/image/aksesuar.jpg" alt="">
-                                <span>Essentials</span>
+                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-id="3" data-id="3">
+                                    <img src="~/assets/image/aksesuar.jpg" alt="">
+                                    <span>Essentials</span>
+                               </a>
                             </div>
                         </div>
 
                         <div class="col-lg-2">
                             <div class="interior">
-                                <img src="~/assets/image/interrior.jpg" alt="">
-                                <span>Interior</span>
+                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-id="4" data-id="4">
+                                    <img src="~/assets/image/interrior.jpg" alt="">
+                                    <span>Interior</span>
+                              </a>
                             </div>
                         </div>
 
                         <div class="col-lg-3">
                             <div class="allcategories">
-                                <img src="~/assets/image/allcategories.jpg" alt="">
-                                <span>Shop All</span>
+                                <a class="allCategoriesName" asp-controller="Shop" asp-action="Index">
+                                    <img src="~/assets/image/allcategories.jpg" alt="">
+                                    <span>Shop All</span>
+                               </a>
                             </div>
                         </div>
                     </div>
@@ -173,6 +183,7 @@
      <script src="https://kit.fontawesome.com/e29b1b43d1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="~/assets/js/home.js"></script>
+
     @await RenderSectionAsync("Script",required:false)
 
 
