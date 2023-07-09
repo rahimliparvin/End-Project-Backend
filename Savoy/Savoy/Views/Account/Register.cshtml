@@ -1,0 +1,69 @@
+﻿@using Savoy.ViewModels.Account;
+@model RegistersVM
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+@section Style{
+
+    <link rel="stylesheet" href="~/assets/scss/pages/registerpage/registerpage.css" />
+}
+
+
+
+<main>
+    <section id="login" style="background: url('@Url.Content("~/assets/image/loginbackground2.webp")') no-repeat; background-position: center;
+    background-size: cover;">
+
+        <div class="form-box">
+            <div class="form-value">
+                <form asp-controller="Account" asp-action="Register" method="post">
+
+                    <h2>Register</h2>
+                    <div class="text-danger"></div>
+                    <div class="inputbox">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" autocomplete="off" asp-for="UserName">
+                        <span style="display:block;color:red" asp-validation-for="UserName"></span>
+                        <label for="">Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" autocomplete="off" asp-for="FirstName">
+                        <span style="display:block;color:red" asp-validation-for="FirstName"></span>
+                        <label for="">FirstName</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" autocomplete="off" asp-for="LastName">
+                        <span style="display:block;color:red" asp-validation-for="LastName"></span>
+                        <label for="">LastName</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="text" autocomplete="off" asp-for="Email">
+                        <span style="display:block;color:red" asp-validation-for="Email"></span>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" autocomplete="off" asp-for="Password">
+                        <span style="display:block;color:red" asp-validation-for="Password"></span>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <input type="password" autocomplete="off" asp-for="ConfirmPassword">
+                        <span style="display:block;color:red" asp-validation-for="ConfirmPassword"></span>
+                        <label for="">Confirm Password</label>
+                    </div>
+                    <button type="submit">Sign up</button>
+                    <div class="register">
+                        <p>Already have an account ? <a asp-controller="Account" asp-action="Login">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>

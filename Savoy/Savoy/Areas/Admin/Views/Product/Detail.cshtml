@@ -1,0 +1,117 @@
+﻿@using Savoy.Areas.Admin.ViewModels.ProductVM;
+
+@model ProductDetailsVM
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container" style="padding-left:200px">
+
+    @foreach (var image in Model.Images)
+    {
+        <img class="mb-3" style="width: 300px; height: 300px; border-radius: unset; object-fit: cover" src="~/assets/image/@image" />
+    }
+
+    <div class="form-group my-3">
+        <label>NAME</label>
+        <input disabled class="form-control" value="@Model.Name" style="display:block;" />
+    </div>
+    <div class="form-group  my-3">
+        <label>Description</label>
+        <textarea disabled class="form-control" style="display:block;" >@Model.Description</textarea>
+    </div>
+
+    <div class="form-group my-3">
+        <label>Price</label>
+        <input disabled class="form-control" value="@Model.Price" style="display:block;" />
+    </div>
+
+    <div class="form-group my-3">
+        <label>SaleCount</label>
+        <input disabled class="form-control" value="@Model.SaleCount" style="display:block;" />
+    </div>
+
+    <div class="form-group my-3">
+        <label>StockCount</label>
+        <input disabled class="form-control" value="@Model.StockCount" style="display:block;" />
+    </div>
+
+    <div class="form-group my-3">
+        <label>RatesCount</label>
+        <input disabled class="form-control" value="@Model.RatesCount" style="display:block;" />
+    </div>
+
+    <div class="form-group my-3">
+        <label>RatesWorth</label>
+        <input disabled class="form-control" value="@Model.RatesWorth" style="display:block;" />
+    </div>
+
+    <div class="form-group my-3">
+        <label>Sku</label>
+        <input disabled class="form-control" value="@Model.Sku" style="display:block;" />
+    </div>
+
+
+    <div class="form-group my-3">
+        <label>Materials</label>
+        <input disabled class="form-control" value="@Model.Materials" style="display:block;" />
+    </div>
+
+    <div class="form-group my-3">
+        <label>Dimensions</label>
+        <textarea disabled class="form-control" style="display:block;">@Model.Dimensions</textarea>
+    </div>
+
+    <div class="form-group my-3">
+        <label>Weight</label>
+        <input disabled class="form-control" value="@Model.Weight" style="display:block;" />
+    </div>
+
+    <div class="form-group my-3">
+        <label>OtherInfo</label>
+        <textarea disabled class="form-control" style="display:block;">@Model.OtherInfo</textarea>
+    </div>
+
+    <div class="form-group my-3">
+        <label asp-for="Categories"></label>
+        @foreach (var category in Model.Categories)
+        {
+            <input class="form-control" disabled value="@category">
+        }
+    </div>
+
+
+    <div class="form-group my-3">
+        <label asp-for="Tags"></label>
+        @foreach (var tag in Model.Tags)
+        {
+            <input class="form-control" disabled value="@tag">
+        }
+    </div>
+
+
+    <div class="form-group my-3">
+        <label asp-for="Colors"></label>
+        @foreach (var color in Model.Colors)
+        {
+            <input class="form-control" disabled value="@color">
+        }
+    </div>
+
+
+    <div class="form-group my-3">
+        <label>Created</label>
+        <input disabled class="form-control" value="@Model.CreatedAt" style="display:block;" />
+    </div>
+
+    <div class="form-group my-3">
+        <label>Updates</label>
+        <input disabled class="form-control" value="@Model.UpdatedAt" style="display:block;" />
+    </div>
+
+
+    <a style=" float: right;" class="btn btn-info my-3" asp-action="Index">Back</a>
+
+</div>
+

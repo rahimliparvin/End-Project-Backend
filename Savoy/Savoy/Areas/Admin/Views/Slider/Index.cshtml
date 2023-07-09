@@ -20,7 +20,6 @@
 								<tr>
 									<th class="cell">Image</th>
 									<th class="cell">Title</th>
-									<th class="cell">Status</th>
 									<th style="width: 340px;" class="cell">Operations</th>
 
 								</tr>
@@ -38,21 +37,6 @@
 											@slider.Title
 										</td>
 										
-										<td data-id="@slider.Id" class="cell">
-
-											<p class=@(slider.SoftDelete ? "text-danger" : "text-success")>Status</p>
-
-											@if (slider.SoftDelete == true)
-											{
-												<div class="deActive-status slider-status"></div>
-											}
-											else
-											{
-												<div class="active-status slider-status"></div>
-											}
-
-
-										</td>
 										<td class="cell">
 											<a asp-action="Detail" asp-route-id="@slider.Id" style="border:1px solid blue" class="btn btn-outline-info">Info</a>
 											<a asp-action="Edit" asp-route-id="@slider.Id" style="border:1px solid green" class="btn btn-outline-primary">Edit</a>

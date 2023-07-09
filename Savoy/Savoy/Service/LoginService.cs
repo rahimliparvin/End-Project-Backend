@@ -15,5 +15,8 @@ namespace Savoy.Service
         }
 
         public async Task<Login> GetAsync() => await _context.Logins.Where(m=>!m.SoftDelete).SingleAsync();
+
+        public async Task<Login> GetFullDataByIdAsync(int id) => await _context.Logins.FindAsync(id);
+    
     }
 }

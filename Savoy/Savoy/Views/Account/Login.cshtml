@@ -1,0 +1,48 @@
+﻿@using Savoy.ViewModels.Account;
+@model LoginsVM
+
+@{
+    ViewData["Title"] = "SignIn";
+}
+
+
+@section Style{
+
+    <link rel="stylesheet" href="~/assets/scss/pages/loginpage/loginpage.css" />
+}
+
+<main>
+    <section id="login" style="background: url('@Url.Content("~/assets/image/loginbackground2.webp")') no-repeat; background-position: center;
+    background-size:cover;">
+
+
+        <div class="form-box">
+            <div class="form-value">
+
+                <form asp-controller="Account" asp-action="Login" method="post">
+
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input autocomplete="off" asp-for="EmailOrUserName" />
+                        <label for="">Email or Username</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="fa-solid fa-lock"></i>
+                        <input  asp-for="Password" />
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input asp-for="RememberMe" type="checkbox">Remember Me <a asp-controller="Account" asp-action="ForgotPassWord" method="get">Forget Password</a></label>
+
+                    </div>
+                    <button>Sign In</button>
+                    <div class="register">
+                        <p>Don't have an account ? <a asp-controller="Account" asp-action="Register">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+

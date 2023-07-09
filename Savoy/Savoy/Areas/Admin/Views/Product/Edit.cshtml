@@ -1,0 +1,127 @@
+﻿@using Savoy.Areas.Admin.ViewModels.ProductVM;
+
+@model ProductEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<div style="padding-left:200px" class="container my-5">
+    <form class="forms-sample" asp-action="Edit" method="post" enctype="multipart/form-data">
+
+        <div class="form-group  my-3">
+            <label>Add Name</label>
+            <input class="form-control" type="text" id="customFilee" asp-for="Name" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div class="form-group  my-3">
+            <label class="mt-2">Add Description</label>
+            <input class="form-control" type="text" id="customFile" asp-for="Description" />
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add Price</label>
+            <input class="form-control" id="customFile" asp-for="Price">
+            <span class="text-danger" asp-validation-for="Price"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add RatesCount</label>
+            <input class="form-control" type="number" min="1" max="5" id="customFile" asp-for="RatesCount">
+            <span class="text-danger" asp-validation-for="RatesCount"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add RatesWorth</label>
+            <input class="form-control" type="number" min="1" max="5" id="customFile" asp-for="RatesWorth">
+            <span class="text-danger" asp-validation-for="RatesWorth"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add SaleCount</label>
+            <input class="form-control" type="number" id="customFile" asp-for="SaleCount">
+            <span class="text-danger" asp-validation-for="SaleCount"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add StockCount</label>
+            <input class="form-control" type="number" id="customFile" asp-for="StockCount">
+            <span class="text-danger" asp-validation-for="StockCount"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add Sku</label>
+            <input class="form-control" type="text" id="customFile" asp-for="Sku">
+            <span class="text-danger" asp-validation-for="Sku"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add Weight</label>
+            <input class="form-control" type="text" id="customFile" asp-for="Weight">
+            <span class="text-danger " asp-validation-for="Weight"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add Dimension</label>
+            <input class="form-control" type="text" id="customFile" asp-for="Dimensions">
+            <span class="text-danger " asp-validation-for="Dimensions"></span>
+        </div>
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add Materials</label>
+            <input class="form-control" type="text" id="customFile" asp-for="Materials">
+            <span class="text-danger " asp-validation-for="Materials"></span>
+        </div>
+
+
+
+        <div class="from-group  my-3">
+            <label class="mt-2">Add Information</label>
+            <textarea class="form-control" type="text" id="customFile" asp-for="OtherInfo"></textarea>
+            <span class="text-danger" asp-validation-for="OtherInfo"></span>
+        </div>
+       
+       
+        <div class="form-group">
+            <label class="mt-2">Choose Product's Category</label>
+            <select class="form-select" aria-label="Default select example" id="customFile" asp-for="ProductCategoriesIds" asp-items="ViewBag.categories"></select>
+        </div>
+        <div class="form-group">
+            <label class="mt-2">Choose Product's Color</label>
+            <select class="form-select" aria-label="Default select example" id="customFile" asp-for="ProductColorsIds" asp-items="ViewBag.colors"></select>
+        </div>
+
+        <div class="form-group">
+            <label class="mt-2">Choose Product's Tag</label>
+            <select class="form-select" aria-label="Default select example" id="customFile" asp-for="ProductTagsIds" asp-items="ViewBag.tags"></select>
+        </div>
+
+        @foreach (var image in Model.Images)
+        {
+            <img style="width:150px;height:150px;margin-top:30px" src="~/assets/image/@image.Image" />
+
+        }
+
+        <div class="form-group">
+            <label class="mt-5">Add Photo</label>
+            <input class="form-control" id="customFile" asp-for="Photos">
+            <span class="text-danger" asp-validation-for="Photos"></span>
+        </div>
+
+
+        <div class="my-3">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <a type="button" asp-action="Index" class="btn btn-light">Cancel</a>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts{
+
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/ckeditor/ckeditor.js"></script>
+
+}

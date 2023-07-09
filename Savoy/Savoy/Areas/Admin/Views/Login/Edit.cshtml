@@ -1,0 +1,24 @@
+﻿@using Savoy.Areas.Admin.ViewModels.LoginVM;
+@model LoginEditVM
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<div style="padding-left:200px" class="container my-5">
+
+    <form class="forms-sample" style="display:inline-block" asp-action="Edit" method="post" enctype="multipart/form-data">
+
+        <div class="from-group my-3">
+            <label class="mt-5">Add Photo</label>
+            <input class="form-control" id="customFile" asp-for="Photo">
+            <span class="text-danger" asp-validation-for="Photo"></span>
+        </div>
+
+        <div class="buttons my-3">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <a asp-action="Index" class="btn btn-light">Cancel</a>
+        </div>
+    </form>
+</div>
+

@@ -51,7 +51,23 @@
                         <div class="navright">
                             <ul>
                                 <li><a asp-controller="Wishlist" asp-action="Index"><i class="fa-regular fa-heart"></i></a></li>
-                                <li><a asp-controller="Login" asp-action="Index" >Sign In</a></li>
+
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <form asp-controller="Account" asp-action="Logout">
+                                        <button type="submit" style="border:none;background-color:white;margin-top:12px;color:#686868">
+                                            LogOut
+                                        </button>
+                                    </form>
+                                    <li style="list-style:none;color:white;background-color:white;color:#686868 ;">
+                                        @User.Identity.Name
+                                    </li>
+                                }
+                                else
+                                {
+                                    <li><a asp-controller="Account" asp-action="Login">Sign In</a></li>
+                                }
+
                                 <li><a asp-controller="Cart" asp-action="Index">Cart<sup>0</sup></a></li>
                             </ul>
                         </div>
@@ -126,7 +142,7 @@
                         <li><a asp-controller="Checkout" asp-action="Index">Checkout</a></li>
                         <li><a asp-controller="Cart" asp-action="Index">Cart</a></li>
                         <li><a asp-controller="Wishlist" asp-action="Index">Wishlist</a></li>
-                        <li><a asp-controller="Register" asp-action="Index">Sign Up</a></li>
+                        <li><a asp-controller="Account" asp-action="Register">Sign Up</a></li>
                     </ul>
                 </div>
 

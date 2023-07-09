@@ -670,7 +670,7 @@
 
                             a {
                                 text-decoration: none;
-                                color:#282828;
+                                color: #282828;
 
                                 h6 {
                                     font-family: cursive;
@@ -701,7 +701,6 @@
                             }
 
                             form {
-
                                 display: inline-block;
 
                                 button {
@@ -828,6 +827,16 @@
 
                     i {
                         color: white;
+                        border: 1px solid #AAAAAA;
+                        border-radius: 90%;
+                        font-size: 9px;
+                    }
+                }
+
+                li:nth-child(7) {
+
+                    i {
+                        color: black;
                         border: 1px solid #AAAAAA;
                         border-radius: 90%;
                         font-size: 9px;

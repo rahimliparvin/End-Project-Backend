@@ -14,6 +14,6 @@ namespace Savoy.Service
         }
         public async Task<IEnumerable<Team>> GetAllAsync() => await _context.Teams.ToListAsync();
 
-        public async Task<Team> GetByIdAsync(int id) => await _context.Teams.FindAsync(id);
+        public async Task<Team> GetFullDataByIdAsync(int id) => await _context.Teams.FindAsync(id);
     }
 }

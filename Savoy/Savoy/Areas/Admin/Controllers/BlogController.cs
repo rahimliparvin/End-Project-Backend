@@ -6,6 +6,7 @@ using Savoy.Data;
 using Savoy.Helpers;
 using Savoy.Models;
 using Savoy.Service.Interfaces;
+using Savoy.ViewModels;
 
 namespace Savoy.Areas.Admin.Controllers
 {
@@ -153,6 +154,183 @@ namespace Savoy.Areas.Admin.Controllers
                 throw;
             }
         }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            Blog dbProduct = await _blogService.GetFullDataByIdAsync((int)id);
+
+            if (dbProduct is null) return NotFound();
+
+            ViewBag.author = await GetAuthorsAsync();
+            ViewBag.category = await GetCategoriesAsync();
+            ViewBag.tag = await GetTagsAsync();
+
+
+
+
+            return View(new BlogEditVM
+            {
+                Title = dbProduct.Title,
+                Description = dbProduct.Description,
+                AuthorId = dbProduct.AuthorId,
+                CategoryId = dbProduct.CategoryId,
+                TagId = dbProduct.TagId,
+                Images = dbProduct.Images
+            });
+
+
+        }
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int? id, BlogEditVM model)
+        {
+            ViewBag.author = await GetAuthorsAsync();
+            ViewBag.category = await GetCategoriesAsync();
+            ViewBag.tag = await GetTagsAsync();
+
+            if (!ModelState.IsValid) return View(model);
+
+            Blog dbBlog = await _blogService.GetFullDataByIdAsync((int)id);
+
+            if (dbBlog is null) return NotFound();
+
+            if (model.Photos != null)
+            {
+
+                foreach (var photo in model.Photos)
+                {
+
+                    if (!photo.CheckFileType("image/"))
+                    {
+                        ModelState.AddModelError("Photos", "File type must be image");
+                        return View(dbBlog);
+                    }
+
+                    if (photo.CheckFileSize(200))
+                    {
+                        ModelState.AddModelError("Photos", "Image size must be max 200kb");
+                        return View(dbBlog);
+                    }
+
+
+
+                }
+
+                foreach (var item in dbBlog.Images)
+                {
+
+                    string path = FileHelper.GetFilePath(_env.WebRootPath, "assets/image", item.Image);
+
+                    FileHelper.DeleteFile(path);
+                }
+
+
+
+                List<BlogImage> productImages = new();
+
+                foreach (var photo in model.Photos)
+                {
+                    string fileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
+
+
+                    string path = FileHelper.GetFilePath(_env.WebRootPath, "assets/image", fileName);
+
+                    await FileHelper.SaveFileAsync(path, photo);
+
+
+                    BlogImage productImage = new()
+                    {
+                        Image = fileName
+                    };
+
+                    productImages.Add(productImage);
+
+                }
+
+                productImages.FirstOrDefault().IsMain = true;
+
+                dbBlog.Images = productImages;
+            }
+
+
+
+            dbBlog.Title = model.Title;
+            dbBlog.Description = model.Description;
+            dbBlog.AuthorId = model.AuthorId;
+            dbBlog.CategoryId = model.CategoryId;
+            dbBlog.TagId = model.TagId;
+
+            await _context.SaveChangesAsync();
+
+
+            return RedirectToAction(nameof(Index));
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id is null) return BadRequest();
+
+            //ViewBag.author = await GetAuthorsAsync();
+
+            Blog dbBlog = await _blogService.GetFullDataByIdAsync((int)id);
+
+            //ViewBag.desc = Regex.Replace(dbBlog.Description, "<.*?>", String.Empty);
+
+            return View(new ViewModels.BlogVM.BlogDetailVM
+            {
+
+                Title = dbBlog.Title,
+                Description = dbBlog.Description,
+                AuthorId = dbBlog.AuthorId,
+                Images = dbBlog.Images,
+                AuthorName = dbBlog.Author.Name,
+                CategoryId = dbBlog.CategoryId,
+                CategoryName = dbBlog.Category.Name,
+                TagId = dbBlog.TagId,
+                TagName = dbBlog.Tag.Name
+            });
+        }
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) return BadRequest();
+
+            Blog product = await _blogService.GetFullDataByIdAsync((int)id);
+
+            if (product is null) return NotFound();
+
+
+            foreach (var item in product.Images)
+            {
+
+                string path = FileHelper.GetFilePath(_env.WebRootPath, "assets/image", item.Image);
+
+                FileHelper.DeleteFile(path);
+
+            }
+
+
+            _context.Blogs.Remove(product);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+
+        }
+
 
         private async Task<SelectList> GetAuthorsAsync()
         {

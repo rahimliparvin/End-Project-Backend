@@ -1,0 +1,45 @@
+﻿@using Savoy.Areas.Admin.ViewModels.BlogVM;
+
+@model BlogDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container" style="padding-left:200px">
+
+    <div class="form-group my-3">
+        <label>TITLE</label>
+        <textarea disabled class="form-control"  style="display:block;">@Model.Title</textarea>
+    </div>
+    <div class="form-group  my-3">
+        <label>DESCRIPTION</label>
+        <textarea disabled class="form-control" style="display:block;">@Model.Description</textarea>
+    </div>
+
+    <div class="form-group  my-3">
+        <label>AuthorName</label>
+        <input disabled class="form-control" value="@Model.AuthorName" style="display:block;" />
+    </div>
+
+    <div class="form-group  my-3">
+        <label>CategoryName</label>
+        <input disabled class="form-control" value="@Model.CategoryName" style="display:block;" />
+    </div>
+
+    <div class="form-group  my-3">
+        <label>TagName</label>
+        <input disabled class="form-control" value="@Model.TagName" style="display:block;" />
+    </div>
+
+    @foreach (var image in Model.Images)
+    {
+
+        <div class="slider-content" style="display:flex">
+            <img style="width:300px;height:300px;" src="~/assets/image/@image.Image" />
+        </div>
+    }
+
+    <a style=" float: right;" class="btn btn-info my-3" asp-action="Index">Back</a>
+
+</div>
+

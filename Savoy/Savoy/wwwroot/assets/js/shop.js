@@ -1,42 +1,64 @@
 
-$(document).on("click", ".categoriesName", function () {
+//$(document).on("click", ".categoriesName", function () {
 
-    let categoryId = $(this).attr("data-id")
-    let changeElem = $(this)
+//    let categoryId = $(this).attr("data-id")
+//    let changeElem = $(this)
 
-    let data = { id: categoryId }
+//    let data = { id: categoryId }
 
-    $.ajax({
-        url: "Shop/GetCategoryProducts",
-        type: "Get",
-        data: data,
-        success: function (res) {
-            $(".content").html(res)
+//    $.ajax({
+//        url: "Shop/GetCategoryProducts",
+//        type: "Get",
+//        data: data,
+//        success: function (res) {
+//            $(".content").html(res)
 
-        }
-    })
-})
-
-
-
-$(document).on("click", ".allCategoriesName", function (e) {
-    e.preventDefault();
-    e.stopPropagation();
+//        }
+//    })
+//})
 
 
-    $.ajax({
-        url: "Shop/GetAllCategoriesProducts",
-        type: "Get",
-        success: function (res) {
-            $(".content").html(res)
 
-        }
-    })
-})
+//$(document).on("click", ".allCategoriesName", function (e) {
+//    e.preventDefault();
+//    e.stopPropagation();
+
+
+//    $.ajax({
+//        url: "Shop/GetAllCategoriesProducts",
+//        type: "Get",
+//        success: function (res) {
+//            $(".content").html(res)
+
+//        }
+//    })
+//})
+
+
+//$(document).on("click", ".page", function () {
+
+
+//    let categoryId = $(this).attr("data-id")
+//    let changeElem = $(this)
+
+//    let data = { id: categoryId }
+
+//    $.ajax({
+//        url: "Shop/GetCategoryProducts",
+//        type: "Get",
+//        data: data,
+//        success: function (res) {
+//            $(".content").html(res)
+
+//        }
+//    })
+
+//})
 
 
 
 "use strict";
+
 
 
 
@@ -183,7 +205,6 @@ filter.addEventListener("click",function(){
 
 let firstImages = document.querySelectorAll("#carousel .mySwiper .productcart .firstimg");
 
-console.log(firstImages);
 
 firstImages.forEach(firstImage => {
 

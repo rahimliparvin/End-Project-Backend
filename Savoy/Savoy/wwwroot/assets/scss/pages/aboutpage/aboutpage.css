@@ -497,12 +497,13 @@
   width: 100%;
 }
 
-#about-us .ourteaminfo .teammembers {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+    #about-us .ourteaminfo .teammembers {
+        width: 100%;
+        flex-wrap: wrap;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
 
 #about-us .ourteaminfo .teammembers .member {
   width: 217px;

@@ -16,5 +16,8 @@ namespace Savoy.Service
         }
 
         public async Task<Register> GetAsync() => await _context.Registers.Where(m => !m.SoftDelete).SingleAsync();
+
+        public async Task<Register> GetFullDataByIdAsync(int id) => await _context.Registers.FindAsync(id);
+
     }
 }
