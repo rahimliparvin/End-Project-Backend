@@ -714,22 +714,22 @@ swiper-container swiper-slide img {
   font-family: cursive;
 }
 
-#tabmenu .content .item .col-lg-3 .productcart .productinfo a {
-  border: none;
-  background-color: green;
-  color: white;
-  padding: 7px;
-  border-radius: 3px;
-  text-decoration: none;
-  font-family: cursive;
-}
+    #tabmenu .content .item .col-lg-3 .productcart .productinfo .showmore {
+        border: none;
+        background-color: green;
+        color: white;
+        padding: 7px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-family: cursive;
+    }
 
-#tabmenu .content .item .col-lg-3 .productcart .productinfo a:hover {
-  border: 1px solid green;
-  background-color: white;
-  color: green;
-  font-weight: 500;
-}
+    #tabmenu .content .item .col-lg-3 .productcart .productinfo .showmore:hover {
+        border: 1px solid green;
+        background-color: white;
+        color: green;
+        font-weight: 500;
+    }
 
 #tabmenu .content .item .col-lg-3 .productcart .productinfo .rating {
   position: relative;

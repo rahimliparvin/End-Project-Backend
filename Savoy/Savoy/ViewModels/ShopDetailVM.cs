@@ -4,6 +4,7 @@ namespace Savoy.ViewModels
 {
     public class ShopDetailVM
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
@@ -17,6 +18,8 @@ namespace Savoy.ViewModels
         public string Materials { get; set; }
         public string OtherInfo { get; set; }
         public ICollection<string> ProductColors { get; set; }
+        public ICollection<int> ColorsId { get; set; }
+
         public ICollection<string> ProductCategories { get; set; }
         public ICollection<string> ProductTags { get; set; }
         public ICollection<string> ProductImages { get; set; }

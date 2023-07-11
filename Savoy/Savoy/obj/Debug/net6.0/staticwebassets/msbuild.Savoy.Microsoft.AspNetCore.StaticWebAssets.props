@@ -36288,6 +36288,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\2a892598-8031-4290-9972-2fbb97fb19e0_loginbackground2 (1).webp))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\38ff4d9e-d97c-4988-b2a8-2bf2316d2bf9_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Savoy</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Savoy</BasePath>
+      <RelativePath>assets/image/38ff4d9e-d97c-4988-b2a8-2bf2316d2bf9_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\38ff4d9e-d97c-4988-b2a8-2bf2316d2bf9_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\39e06805-7223-4b45-a107-8447e3a3270f_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Savoy</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Savoy</BasePath>
+      <RelativePath>assets/image/39e06805-7223-4b45-a107-8447e3a3270f_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\39e06805-7223-4b45-a107-8447e3a3270f_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Savoy</SourceId>
@@ -36335,6 +36367,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\5bd733b9-f731-4ed9-8694-1f58ad048550_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\5dfbf5f5-9330-4b7f-af45-d77dcada80ae_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Savoy</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Savoy</BasePath>
+      <RelativePath>assets/image/5dfbf5f5-9330-4b7f-af45-d77dcada80ae_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\5dfbf5f5-9330-4b7f-af45-d77dcada80ae_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\image\6822680a-cb02-4431-b16e-ef56a1f7d1e1_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg))">
       <SourceType>Package</SourceType>

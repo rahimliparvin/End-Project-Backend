@@ -39,7 +39,7 @@ namespace Savoy.Service
                                                                                                                  Take(take).
                                                                                                                  ToListAsync();
 
-        public async Task<IEnumerable<Product>> GetPaginationData(int? categoryId, int? colorId, int? tagId, int page, int take, string searchText)
+        public async Task<IEnumerable<Product>> GetPaginationData(int? categoryId, int? tagId, int? colorId, int page, int take, string searchText)
         {
             if (categoryId == null)
             {
@@ -89,7 +89,6 @@ namespace Savoy.Service
                                                                                  ThenInclude(m => m.Category).
                                                                                  Where(x => x.ProductColors.Any(xt => xt.ColorId == colorId)).
                                                                                  Where(x => x.ProductTags.Any(xt => xt.TagId == tagId)).
-                                                                                
                                                                                  Skip((page * take) - take).
                                                                                  Take(take).
                                                                                  ToListAsync();
@@ -214,9 +213,8 @@ namespace Savoy.Service
 
         }
 
-        public async Task<int> GetCategoryIdProductCountAsync(int? categoryId) => await _context.Products.
-                                                                                                 Where(x => x.ProductCategories.Any(xt => xt.CategoryId == categoryId)).
-                                                                                                 CountAsync();
+        public async Task<int> GetCategoryIdProductCountAsync(int? categoryId) => await _context.Products.Where(x => x.ProductCategories.Any(xt => xt.CategoryId == categoryId)).
+                                                                                                          CountAsync();
 
 
     }

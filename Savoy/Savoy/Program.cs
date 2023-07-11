@@ -65,6 +65,7 @@ builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<ICartService, CartService>();
 
 
 var app = builder.Build();

@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@inject Savoy.Service.Interfaces.ICartService _cartService;
+@inject Microsoft.AspNetCore.Identity.UserManager<AppUser> _userManager;
+
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -62,13 +66,23 @@
                                     <li style="list-style:none;color:white;background-color:white;color:#686868 ;">
                                         @User.Identity.Name
                                     </li>
+
+                                    <li>
+                                        <a asp-controller="Cart" asp-action="Index">
+                                            Cart
+                                            <sup>
+                                           
+                                                @await _cartService.GetCartProductBasket(_userManager.Users.FirstOrDefault(u=>u.UserName == User.Identity.Name).Id)
+                                            </sup>
+                                        </a>
+                                    </li>
                                 }
                                 else
                                 {
                                     <li><a asp-controller="Account" asp-action="Login">Sign In</a></li>
                                 }
 
-                                <li><a asp-controller="Cart" asp-action="Index">Cart<sup>0</sup></a></li>
+                               
                             </ul>
                         </div>
                     </div>
@@ -87,7 +101,7 @@
 
                         <div class="col-lg-3">
                             <div class="bags">
-                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-id="1" data-id="1">
+                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-categoryId="1" data-id="1">
                                     <img src="~/assets/image/bags.jpg" alt="">
                                     <span>Bags & Backpacks</span>
                                </a>
@@ -97,7 +111,7 @@
                         <div class="col-lg-2">
 
                             <div class="decoration">
-                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-id="2" data-id="2">
+                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-categoryId="2" data-id="2">
                                     <img src="~/assets/image/decor.jpg" alt="">
                                 <span>Decoration</span>
                                </a>
@@ -106,7 +120,7 @@
 
                         <div class="col-lg-2">
                             <div class="essentials">
-                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-id="3" data-id="3">
+                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-categoryId="3" data-id="3">
                                     <img src="~/assets/image/aksesuar.jpg" alt="">
                                     <span>Essentials</span>
                                </a>
@@ -115,7 +129,7 @@
 
                         <div class="col-lg-2">
                             <div class="interior">
-                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-id="4" data-id="4">
+                                <a class="categoriesName" asp-controller="Shop" asp-action="Index" asp-route-categoryId="4" data-id="4">
                                     <img src="~/assets/image/interrior.jpg" alt="">
                                     <span>Interior</span>
                               </a>

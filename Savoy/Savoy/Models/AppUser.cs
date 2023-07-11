@@ -7,5 +7,13 @@ namespace Savoy.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public bool RememberMe { get; set; } = false;
+
+        public ICollection<BasketItem> BasketItems { get; set; }
+
+
+        public AppUser()
+        {
+            BasketItems = new List<BasketItem>();
+        }
     }
 }

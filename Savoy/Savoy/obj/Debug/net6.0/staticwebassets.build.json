@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PgRMLfIWsuHTqlmr1vL+cLCtswO14CPCJLIH+09hwk4=",
+  "Hash": "i/2L9P7uL3dpWSFLwx5LliSBR+SvXlmukhn2WLahlxE=",
   "Source": "Savoy",
   "BasePath": "_content/Savoy",
   "Mode": "Default",
@@ -38573,6 +38573,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\image\\2a892598-8031-4290-9972-2fbb97fb19e0_loginbackground2 (1).webp"
     },
     {
+      "Identity": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\38ff4d9e-d97c-4988-b2a8-2bf2316d2bf9_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg",
+      "SourceId": "Savoy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\",
+      "BasePath": "_content/Savoy",
+      "RelativePath": "assets/image/38ff4d9e-d97c-4988-b2a8-2bf2316d2bf9_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\image\\38ff4d9e-d97c-4988-b2a8-2bf2316d2bf9_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\39e06805-7223-4b45-a107-8447e3a3270f_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg",
+      "SourceId": "Savoy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\",
+      "BasePath": "_content/Savoy",
+      "RelativePath": "assets/image/39e06805-7223-4b45-a107-8447e3a3270f_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\image\\39e06805-7223-4b45-a107-8447e3a3270f_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg"
+    },
+    {
       "Identity": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg",
       "SourceId": "Savoy",
       "SourceType": "Discovered",
@@ -38622,6 +38656,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\image\\5bd733b9-f731-4ed9-8694-1f58ad048550_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\5dfbf5f5-9330-4b7f-af45-d77dcada80ae_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg",
+      "SourceId": "Savoy",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\",
+      "BasePath": "_content/Savoy",
+      "RelativePath": "assets/image/5dfbf5f5-9330-4b7f-af45-d77dcada80ae_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\image\\5dfbf5f5-9330-4b7f-af45-d77dcada80ae_3d738cca-f4e8-4869-8cdd-0f278cfef791_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg"
     },
     {
       "Identity": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\6822680a-cb02-4431-b16e-ef56a1f7d1e1_jaguar-xj13-sports-car-jaguar-cars-png-favpng-ydRsa5y11bmPTninCUZYptwYk.jpg",

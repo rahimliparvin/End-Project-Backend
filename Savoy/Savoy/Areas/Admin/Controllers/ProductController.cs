@@ -193,7 +193,12 @@ namespace Savoy.Areas.Admin.Controllers
 
 
             productImages.FirstOrDefault().IsMain = true;
-            productImages.Skip(1).FirstOrDefault().HoverImage = true;
+
+            if(productImages.Skip(1).FirstOrDefault().Image != null)
+            {
+                productImages.Skip(1).FirstOrDefault().HoverImage = true;
+            }
+          
 
 
             Product newProduct = new()

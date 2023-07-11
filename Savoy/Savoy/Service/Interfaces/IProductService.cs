@@ -10,7 +10,7 @@ namespace Savoy.Service.Interfaces
 
         Task<IEnumerable<Product>> GetPaginationDatas(int page, int take);
 
-        Task<IEnumerable<Product>> GetPaginationData(int? categoryId,int? colorId,int? tagId ,int page, int take,string serachText);
+        Task<IEnumerable<Product>> GetPaginationData(int? categoryId,int? tagId,int? colorId ,int page, int take,string serachText);
 
         Task<int> GetCountAsync();
         Task<int> GetCategoryIdProductCountAsync(int? categoryId);

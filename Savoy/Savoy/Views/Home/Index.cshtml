@@ -57,20 +57,38 @@
                         {
                             <div class="col-lg-3">
                                 <div class="productcart">
-                                   @* <p>@product.Created.ToString("dd MMMM yyyy")</p>*@
+                                    @* <p>@product.Created.ToString("dd MMMM yyyy")</p>*@
                                     <img class="firstimg" src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
                                     <a asp-controller="shop" asp-action="Detail" asp-route-id="@product.Id">
-                                        <img class="secondimg"
+                                        @if (product.ProductImages.Where(m => m.HoverImage).FirstOrDefault().Image == null)
+                                        {
+                                            <img class="secondimg"
+                                         src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                        }
+                                        else
+                                        {
+                                            <img class="secondimg"
                                          src="~/assets/image/@product.ProductImages.Where(m=>m.HoverImage).FirstOrDefault()?.Image" alt="">
+                                        }
                                     </a>
                                     <div class="productinfo">
                                         <h6>@product.Name</h6>
                                         <div class="pricelike">
                                             <span class="pricecurrency">$<span>@product.Price</span></span>
-                                            <i class="fa-regular fa-heart like"></i>
-                                            <i class="fa-solid fa-heart d-none"></i>
+                                            <a asp-controller="Shop" asp-action="AddWishlist" asp-route-productId="@product.Id">
+                                                <i class="fa-regular fa-heart like"></i>
+                                            </a>
+                                            <a asp-controller="Shop" asp-action="RemoveWishlist" asp-route-id="@product.Id"> <i class="fa-solid fa-heart d-none"></i></a>
+                                           
                                         </div>
-                                        <a href="" class="showmore">Add to cart</a>
+
+                                        <form style="display:inline-block;" asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1">
+                                             <button type="submit"  class="showmore">Add to cart</button>
+                                        </form>
+
+                                       
+
+
                                         <div class="rating">
                                             @for (int i = 0; i < product.RatesWorth / product.RatesCount; i++)
                                             {
@@ -92,11 +110,19 @@
                         {
                             <div class="col-lg-3">
                                 <div class="productcart">
-                                  @*  <p>@product.Created.ToString("dd MMMM yyyy")</p>*@
+                                    @*  <p>@product.Created.ToString("dd MMMM yyyy")</p>*@
                                     <img class="firstimg" src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
                                     <a asp-controller="shop" asp-action="Detail" asp-route-id="@product.Id">
-                                        <img class="secondimg"
+                                        @if (product.ProductImages.Where(m => m.HoverImage).FirstOrDefault().Image == null)
+                                        {
+                                            <img class="secondimg"
+                                         src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                        }
+                                        else
+                                        {
+                                            <img class="secondimg"
                                          src="~/assets/image/@product.ProductImages.Where(m=>m.HoverImage).FirstOrDefault()?.Image" alt="">
+                                        }
                                     </a>
                                     <div class="productinfo">
                                         <h6>@product.Name</h6>
@@ -105,7 +131,7 @@
                                             <i class="fa-regular fa-heart like"></i>
                                             <i class="fa-solid fa-heart d-none"></i>
                                         </div>
-                                        <a href="" class="showmore">Add to cart</a>
+                                        <a asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1" class="showmore">Add to cart</a>
                                         <div class="rating">
 
                                             @for (int i = 0; i < product.RatesWorth / product.RatesCount; i++)
@@ -124,16 +150,29 @@
                     </div>
 
                     <div data-id="tab3" class="item d-none">
-                     
-                           @foreach (var product in Model.Products.OrderByDescending(m => m.Created).Take(12))
+
+                        @foreach (var product in Model.Products.OrderByDescending(m => m.Created).Take(12))
                         {
                             <div class="col-lg-3">
                                 <div class="productcart">
-                                   @* <p>@product.Created.ToString("dd MMMM yyyy")</p>*@
+                                    @* <p>@product.Created.ToString("dd MMMM yyyy")</p>*@
                                     <img class="firstimg" src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
                                     <a asp-controller="shop" asp-action="Detail" asp-route-id="@product.Id">
-                                        <img class="secondimg"
+
+
+                                        @if (product.ProductImages.Where(m => m.HoverImage).FirstOrDefault().Image == null)
+                                        {
+                                            <img class="secondimg"
+                                         src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                        }
+                                        else
+                                        {
+                                            <img class="secondimg"
                                          src="~/assets/image/@product.ProductImages.Where(m=>m.HoverImage).FirstOrDefault()?.Image" alt="">
+                                        }
+
+
+
                                     </a>
                                     <div class="productinfo">
                                         <h6>@product.Name</h6>
@@ -142,7 +181,7 @@
                                             <i class="fa-regular fa-heart like"></i>
                                             <i class="fa-solid fa-heart d-none"></i>
                                         </div>
-                                        <a href="" class="showmore">Add to cart</a>
+                                        <a asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1" class="showmore">Add to cart</a>
                                         <div class="rating">
 
                                             @for (int i = 0; i < product.RatesWorth / product.RatesCount; i++)

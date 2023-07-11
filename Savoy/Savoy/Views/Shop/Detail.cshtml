@@ -34,13 +34,21 @@
                                 <img src="~/assets/image/@Model.ProductImages.FirstOrDefault()" class="d-block w-100" alt="...">
                             </div>
 
-
-                            @foreach (var image in Model.ProductImages.Skip(1))
-                            {
-                                <div class="carousel-item">
-                                    <img src="~/assets/image/@image" class="d-block w-100" alt="...">
-                                </div>
+                            @if(Model.ProductImages.Skip(1).FirstOrDefault() != null){
+                                @foreach (var image in Model.ProductImages.Skip(1))
+                                {
+                                    <div class="carousel-item">
+                                        <img src="~/assets/image/@image" class="d-block w-100" alt="...">
+                                    </div>
+                                }
                             }
+                            else
+                            {
+                                 <div class="carousel-item">
+                                        <img src="~/assets/image/@Model.ProductImages.FirstOrDefault()" class="d-block w-100" alt="...">
+                                    </div>
+                            }
+
 
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
@@ -73,13 +81,14 @@
                             }
 
                         </div>
-                        <select name="" id="">
+                        <select name="colorId" id="">
                             <option selected default value="">@Model.ProductColors.FirstOrDefault()</option>
                            @foreach (var color in Model.ProductColors.Skip(1))
                             {
                                 <option value="">@color</option>
                             }
                         </select>
+                        <form asp-controller="Shop"asp-action="AddBasket" asp-route-id="@Model.Id">
                         <div class="quantity">
 
 
@@ -89,7 +98,7 @@
                                     <i class="fa-solid fa-minus"></i>
                                 </li>
                                 <li>
-                                    <input min="1" disabled value="1" type="number">
+                                        <input style="background:#f0eded" name="quantity" min="1" value="1" type="number" readonly>
                                 </li>
                                 <li>
                                     <i class="fa-solid fa-plus"></i>
@@ -98,8 +107,8 @@
 
                         </div>
 
-                        <form>
-                            <button type="button">Add to cart</button>
+                   
+                            <button type="submit">Add to cart</button>
                         </form>
 
                     </div>
