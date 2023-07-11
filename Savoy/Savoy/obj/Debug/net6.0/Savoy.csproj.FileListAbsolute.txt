@@ -1,11 +1,3 @@
-C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.csproj.AssemblyReference.cache
-C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.AssemblyInfoInputs.cache
-C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.AssemblyInfo.cs
-C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.csproj.CoreCompileInputs.cache
-C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.RazorAssemblyInfo.cache
-C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.RazorAssemblyInfo.cs
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\bin\Debug\net6.0\appsettings.json
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\bin\Debug\net6.0\Savoy.staticwebassets.runtime.json
@@ -243,6 +235,14 @@ C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\bin\Debug\net6.0\runtimes
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.csproj.AssemblyReference.cache
+C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.AssemblyInfoInputs.cache
+C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.AssemblyInfo.cs
+C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.csproj.CoreCompileInputs.cache
+C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.RazorAssemblyInfo.cache
+C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\Savoy.RazorAssemblyInfo.cs
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\staticwebassets\msbuild.Savoy.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\staticwebassets\msbuild.build.Savoy.props
 C:\Users\CASPER\Desktop\EndProject-Backend\Savoy\Savoy\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Savoy.props

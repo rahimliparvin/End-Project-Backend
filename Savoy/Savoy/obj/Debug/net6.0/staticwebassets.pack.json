@@ -9273,6 +9273,14 @@
       "PackagePath": "staticwebassets\\assets\\image\\clientimage.png"
     },
     {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\clientimage2.png",
+      "PackagePath": "staticwebassets\\assets\\image\\clientimage2.png"
+    },
+    {
+      "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\clientimage3.png",
+      "PackagePath": "staticwebassets\\assets\\image\\clientimage3.png"
+    },
+    {
       "Id": "C:\\Users\\CASPER\\Desktop\\EndProject-Backend\\Savoy\\Savoy\\wwwroot\\assets\\image\\clientsayspp.png",
       "PackagePath": "staticwebassets\\assets\\image\\clientsayspp.png"
     },

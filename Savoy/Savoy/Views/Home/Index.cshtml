@@ -72,31 +72,31 @@
                                         }
                                     </a>
                                     <div class="productinfo">
-                                        <h6>@product.Name</h6>
-                                        <div class="pricelike">
+                                        <span>@product.Name</span><a style="float:right;" asp-controller="Shop" asp-action="AddWishlist" asp-route-productId="@product.Id">
+                                            <i  class="fa-regular fa-heart like"></i>
+                                        </a>
+                                        <div class="pricelike" style="margin-top:13px;">
                                             <span class="pricecurrency">$<span>@product.Price</span></span>
-                                            <a asp-controller="Shop" asp-action="AddWishlist" asp-route-productId="@product.Id">
-                                                <i class="fa-regular fa-heart like"></i>
-                                            </a>
-                                            <a asp-controller="Shop" asp-action="RemoveWishlist" asp-route-id="@product.Id"> <i class="fa-solid fa-heart d-none"></i></a>
-                                           
+
+                                            <form style="display:inline-block;position:absolute;right:8px;" asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1">
+                                                <button style="border:none;background-color:white;padding-left:100px;" type="submit" class="showmore"><i style="color:#282828;font-size:22px;" class="fa-solid fa-cart-shopping"></i></button>
+                                            </form>
+
+                       
                                         </div>
 
-                                        <form style="display:inline-block;" asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1">
-                                             <button type="submit"  class="showmore">Add to cart</button>
-                                        </form>
-
+                                       
                                        
 
 
-                                        <div class="rating">
+                                       @* <div class="rating">
                                             @for (int i = 0; i < product.RatesWorth / product.RatesCount; i++)
                                             {
                                                 <i class="fa-solid fa-star"></i>
                                             }
 
 
-                                        </div>
+                                        </div>*@
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +298,7 @@
                         <div class="clientandcornerphoto">
 
                             <div class="clientphoto">
-                                <img class="clientimg" src="~/assets/image/clientimage.png" alt="">
+                                <img class="clientimg" src="~/assets/image/clientimage2.png" alt="">
                             </div>
 
                             <div class="corner">
@@ -327,7 +327,7 @@
                         <div class="clientandcornerphoto">
 
                             <div class="clientphoto">
-                                <img class="clientimg" src="~/assets/image/clientimage.png" alt="">
+                                <img class="clientimg" src="~/assets/image/clientimage3.png" alt="">
                             </div>
 
                             <div class="corner">

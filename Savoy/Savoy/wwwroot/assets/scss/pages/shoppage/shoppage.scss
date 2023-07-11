@@ -886,8 +886,8 @@
             height: 520px;
             background: #fff;
             display: flex;
-            justify-content: center;
-            align-items: center;
+           /* justify-content: center;
+            align-items: center;*/
 
 
             .productcart {
@@ -1004,13 +1004,7 @@
                 height: 356px;
                 object-fit: cover;
             }
-            // width: 80%;
-            // &:nth-child(2n) {
-            //   width: 60%;
-            // }
-            // &:nth-child(3n) {
-            //   width: 40%;
-            // }
+           
         }
     }
 }

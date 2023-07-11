@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProniaBackEndProject.Areas.Admin.ViewModels.AuthorVM;
 using Savoy.Data;
+using Savoy.Helpers;
 using Savoy.Models;
 using Savoy.Service.Interfaces;
 
 namespace Savoy.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class AuthorController : Controller
     {

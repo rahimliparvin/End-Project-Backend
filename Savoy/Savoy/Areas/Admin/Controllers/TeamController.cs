@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProniaBackEndProject.Areas.Admin.ViewModels;
 using Savoy.Areas.Admin.ViewModels.SliderVM;
@@ -8,9 +9,11 @@ using Savoy.Helpers;
 using Savoy.Models;
 using Savoy.Service;
 using Savoy.Service.Interfaces;
+using System.Data;
 
 namespace Savoy.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class TeamController : Controller
     {

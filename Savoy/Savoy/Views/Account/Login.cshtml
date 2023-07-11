@@ -25,11 +25,13 @@
                     <div class="inputbox">
                         <i class="fa-regular fa-envelope"></i>
                         <input autocomplete="off" asp-for="EmailOrUserName" />
+                        <span style="display:block;color:red" asp-validation-for="EmailOrUserName"></span>
                         <label for="">Email or Username</label>
                     </div>
                     <div class="inputbox">
                         <i class="fa-solid fa-lock"></i>
                         <input  asp-for="Password" />
+                        <span style="display:block;color:red" asp-validation-for="Password"></span>
                         <label for="">Password</label>
                     </div>
                     <div class="forget">

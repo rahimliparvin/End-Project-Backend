@@ -426,6 +426,11 @@ namespace Savoy.Controllers
                         return Redirect(Request.Headers["Referer"].ToString());
                     }
 
+                    if(product.StockCount < quantity)
+                    {
+                        return Redirect(Request.Headers["Referer"].ToString());
+                    }
+
                     basketItem = new BasketItem()
                     {
                         AppUserId = user.Id,
@@ -433,6 +438,7 @@ namespace Savoy.Controllers
                         Count = quantity
                     };
                     _context.BasketItems.Add(basketItem);
+                  
                 }
                 else
                 {
@@ -445,10 +451,12 @@ namespace Savoy.Controllers
                 }
 
                 product.StockCount = product.StockCount - quantity;
+                product.SaleCount = product.SaleCount + quantity;
                 _context.SaveChanges();
+                return Redirect(Request.Headers["Referer"].ToString());
             }
 
-            return Redirect(Request.Headers["Referer"].ToString());
+            return RedirectToAction("Login","Account");
         }
 
         public async Task<IActionResult> RemoveBasketItem(int id)
@@ -479,13 +487,14 @@ namespace Savoy.Controllers
 
             item.Count = item.Count + quantity;
 
-            if (item.Count == 0) return RedirectToAction("Index", "Cart");
+            if (item.Count < 0) return RedirectToAction("Index", "Cart");
 
             Product product = await _productService.GetFullDataByIdAsync(item.ProductId);
 
             product.StockCount = product.StockCount - quantity;
+            product.SaleCount = product.SaleCount + quantity;
 
-            if (product.StockCount == 0) return RedirectToAction("Index", "Cart");
+            if (product.StockCount < 0) return RedirectToAction("Index", "Cart");
             _context.SaveChanges();
             //item.Count= ++quantity;
             return RedirectToAction("Index", "Cart");
@@ -514,33 +523,40 @@ namespace Savoy.Controllers
                     };
                     _context.WishlistItems.Add(wishlistItem);
                     _context.SaveChanges();
-                };
-
-            }
-
-            return Redirect(Request.Headers["Referer"].ToString());
-        }
-
-
-        public async Task<IActionResult> RemoveWishlist(int id)
-        {
-            Product product = await _productService.GetFullDataByIdAsync((int)id);
-
-            if (User.Identity.IsAuthenticated)
-            {
-                AppUser user = await _userManager.FindByNameAsync(User.Identity.Name);
-                WishlistItem wishlistItem = _context.WishlistItems.FirstOrDefault(b => b.ProductId == product.Id && b.AppUserId == user.Id);
-                if (wishlistItem != null)
+                }
+                else
                 {
-                    
-
                     _context.WishlistItems.Remove(wishlistItem);
                     _context.SaveChanges();
                 }
+
+
+                return Redirect(Request.Headers["Referer"].ToString());
             }
 
-            return Redirect(Request.Headers["Referer"].ToString());
+            return RedirectToAction("Login","Account");
         }
+
+
+        //public async Task<IActionResult> RemoveWishlist(int id)
+        //{
+        //    Product product = await _productService.GetFullDataByIdAsync((int)id);
+
+        //    if (User.Identity.IsAuthenticated)
+        //    {
+        //        AppUser user = await _userManager.FindByNameAsync(User.Identity.Name);
+        //        WishlistItem wishlistItem = _context.WishlistItems.FirstOrDefault(b => b.ProductId == product.Id && b.AppUserId == user.Id);
+        //        if (wishlistItem != null)
+        //        {
+                    
+
+        //            _context.WishlistItems.Remove(wishlistItem);
+        //            _context.SaveChanges();
+        //        }
+        //    }
+
+        //    return Redirect(Request.Headers["Referer"].ToString());
+        //}
 
 
 

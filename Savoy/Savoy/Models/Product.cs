@@ -17,7 +17,7 @@
         public ICollection<ProductColor> ProductColors { get; set; }
         public ICollection<ProductCategory> ProductCategories { get; set; }
         public ICollection<BasketItem> BasketItems { get; set; }
-
+        public ICollection<ProductComment> ProductComments { get; set; }
         public ICollection<ProductTag> ProductTags { get; set; }
         public ICollection<ProductImage> ProductImages { get; set; }
 

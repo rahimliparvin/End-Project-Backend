@@ -101,8 +101,7 @@
                 </div>
 
                 <div class="content">
-                    @*
-                    <partial name="_ProductPartial" model="@Model.Datas.FirstOrDefault().Products" />*@
+                  
 
                     <div class="item">
 
@@ -117,43 +116,54 @@
                             @foreach (var product in Model.Datas.FirstOrDefault().Products)
                             {
                                 <div class="col-lg-3">
+
+
                                     <div class="productcart">
 
-
                                         <img class="firstimg" src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
-                                        <a asp-controller="Shop" asp-action="Detail" asp-route-id="@product.Id">
+                                        <a asp-controller="shop" asp-action="Detail" asp-route-id="@product.Id">
                                             @if (product.ProductImages.Where(m => m.HoverImage).FirstOrDefault().Image == null)
                                             {
                                                 <img class="secondimg"
-                                                  src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                         src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
                                             }
                                             else
                                             {
                                                 <img class="secondimg"
-                                                  src="~/assets/image/@product.ProductImages.Where(m=>m.HoverImage).FirstOrDefault()?.Image" alt="">
+                                         src="~/assets/image/@product.ProductImages.Where(m=>m.HoverImage).FirstOrDefault()?.Image" alt="">
                                             }
                                         </a>
                                         <div class="productinfo">
-                                            <a asp-action="Detail" asp-route-id="@product.Id"><h6>@product.Name</h6></a>
-                                            <div class="pricelike">
-                                                <span class="pricecurrency">$<span>@product.Price</span></span>
+                                            <span>@product.Name</span><a style="float:right;" asp-controller="Shop" asp-action="AddWishlist" asp-route-productId="@product.Id">
                                                 <i class="fa-regular fa-heart like"></i>
-                                                <i class="fa-solid fa-heart dislike d-none"></i>
-                                            </div>
+                                            </a>
+                                            <div class="pricelike" style="margin-top:13px;">
+                                                <span class="pricecurrency">$<span>@product.Price</span></span>
 
-                                            <form asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1">
-                                                <button type="submit" class="showmore">Add to cart</button>
-                                            </form>
-                                            <div class="rating">
+                                                <form style="display:inline-block;position:absolute;right:8px;" asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1">
+                                                    <button style="border:none;background-color:white;padding-left:100px;" type="submit" class="showmore"><i style="color:#282828;font-size:22px;" class="fa-solid fa-cart-shopping"></i></button>
+                                                </form>
 
-                                                @for (int i = 0; i < product.RatesWorth / product.RatesCount; i++)
-                                                {
-                                                    <i class="fa-solid fa-star"></i>
-                                                }
 
                                             </div>
+
+
+
+
+
+                                            @* <div class="rating">
+                                    @for (int i = 0; i < product.RatesWorth / product.RatesCount; i++)
+                                    {
+                                    <i class="fa-solid fa-star"></i>
+                                    }
+
+
+                                    </div>*@
                                         </div>
                                     </div>
+
+
+                                
                                 </div>
                             }
                         }
@@ -215,38 +225,37 @@
                             <div class="productcart">
 
                                 <img class="firstimg" src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
-                                <a asp-action="Detail" asp-route-id="@product.Id">
+                                <a asp-controller="shop" asp-action="Detail" asp-route-id="@product.Id">
                                     @if (product.ProductImages.Where(m => m.HoverImage).FirstOrDefault().Image == null)
                                     {
                                         <img class="secondimg"
-                                       src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
+                                 src="~/assets/image/@product.ProductImages.Where(m=>m.IsMain).FirstOrDefault()?.Image" alt="">
                                     }
                                     else
                                     {
                                         <img class="secondimg"
-                                           src="~/assets/image/@product.ProductImages.Where(m=>m.HoverImage).FirstOrDefault()?.Image" alt="">
+                                 src="~/assets/image/@product.ProductImages.Where(m=>m.HoverImage).FirstOrDefault()?.Image" alt="">
                                     }
                                 </a>
                                 <div class="productinfo">
-
-                                    <a asp-action="Detail" asp-route-id="@product.Id"><h6>@product.Name</h6></a>
-
-                                    <div class="pricelike">
-                                        <span class="pricecurrency">$<span>@product.Price</span></span>
+                                    <span>@product.Name</span><a style="float:right;" asp-controller="Shop" asp-action="AddWishlist" asp-route-productId="@product.Id">
                                         <i class="fa-regular fa-heart like"></i>
-                                        <i class="fa-solid fa-heart dislike d-none"></i>
-                                    </div>
-                                    <form asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1">
-                                        <button type="submit" class="showmore">Add to cart</button>
-                                    </form>
-                                    <div class="rating">
+                                    </a>
+                                    <div class="pricelike" style="margin-top:13px;">
+                                        <span class="pricecurrency">$<span>@product.Price</span></span>
 
-                                        @for (int i = 0; i < product.RatesWorth / product.RatesCount; i++)
-                                        {
-                                            <i class="fa-solid fa-star"></i>
-                                        }
+                                        <form style="display:inline-block;position:absolute;right:8px;" asp-controller="Shop" asp-action="AddBasket" asp-route-Id="@product.Id" asp-route-quantity="1">
+                                            <button style="border:none;background-color:white;padding-left:100px;" type="submit" class="showmore"><i style="color:#282828;font-size:22px;" class="fa-solid fa-cart-shopping"></i></button>
+                                        </form>
+
 
                                     </div>
+
+
+
+
+
+                       
                                 </div>
                             </div>
                         </swiper-slide>
@@ -254,7 +263,7 @@
 
 
                 </swiper-container>
-            };
+            }
 
 
         </div>

@@ -486,6 +486,37 @@ namespace Savoy.Migrations
                     b.ToTable("Contacts");
                 });
 
+            modelBuilder.Entity("Savoy.Models.ContactForm", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("SoftDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Updated")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ContactForms");
+                });
+
             modelBuilder.Entity("Savoy.Models.Login", b =>
                 {
                     b.Property<int>("Id")
@@ -631,6 +662,41 @@ namespace Savoy.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductColors");
+                });
+
+            modelBuilder.Entity("Savoy.Models.ProductComment", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AppUserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("SoftDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("Updated")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductComments");
                 });
 
             modelBuilder.Entity("Savoy.Models.ProductImage", b =>
@@ -989,6 +1055,23 @@ namespace Savoy.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Savoy.Models.ProductComment", b =>
+                {
+                    b.HasOne("Savoy.Models.AppUser", "AppUser")
+                        .WithMany("ProductComments")
+                        .HasForeignKey("AppUserId");
+
+                    b.HasOne("Savoy.Models.Product", "Product")
+                        .WithMany("ProductComments")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("Savoy.Models.ProductImage", b =>
                 {
                     b.HasOne("Savoy.Models.Product", "Product")
@@ -1039,6 +1122,8 @@ namespace Savoy.Migrations
             modelBuilder.Entity("Savoy.Models.AppUser", b =>
                 {
                     b.Navigation("BasketItems");
+
+                    b.Navigation("ProductComments");
                 });
 
             modelBuilder.Entity("Savoy.Models.Author", b =>
@@ -1070,6 +1155,8 @@ namespace Savoy.Migrations
                     b.Navigation("ProductCategories");
 
                     b.Navigation("ProductColors");
+
+                    b.Navigation("ProductComments");
 
                     b.Navigation("ProductImages");
 

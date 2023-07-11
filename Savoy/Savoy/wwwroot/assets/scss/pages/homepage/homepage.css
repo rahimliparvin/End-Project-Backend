@@ -474,7 +474,7 @@ swiper-container {
 }
 
 swiper-container swiper-slide {
-  text-align: center;
+/*  text-align: center*/;
   font-size: 18px;
   background: #fff;
   display: -webkit-box;
@@ -678,24 +678,29 @@ swiper-container swiper-slide img {
   z-index: 2;
 }
 
-#tabmenu .content .item .col-lg-3 .productcart .productinfo {
-  width: 100%;
-  height: 101px;
-  position: relative;
-  top: 360px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+    #tabmenu .content .item .col-lg-3 .productcart .productinfo {
+        width: 100%;
+        height: 101px;
+        position: relative;
+        top: 360px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 14px;
+    }
 
-#tabmenu .content .item .col-lg-3 .productcart .productinfo h6 {
-  font-family: cursive;
-}
+    #tabmenu .content .item .col-lg-3 .productcart .productinfo span {
+        font-family: cursive;
+        font-size: 17px;
+        color: #282828;
+        font-family: unset;
+        font-weight: 500;
+    }
 
 #tabmenu .content .item .col-lg-3 .productcart .productinfo .pricelike {
   margin-bottom: 10px;
 }
 
-#tabmenu .content .item .col-lg-3 .productcart .productinfo .pricelike i {
+#tabmenu .content .item .col-lg-3 .productcart .productinfo  a i {
   float: right;
   font-size: 20px;
   color: red;
@@ -714,24 +719,24 @@ swiper-container swiper-slide img {
   font-family: cursive;
 }
 
-    #tabmenu .content .item .col-lg-3 .productcart .productinfo .showmore {
-        border: none;
-        background-color: green;
-        color: white;
-        padding: 7px;
-        border-radius: 3px;
-        text-decoration: none;
-        font-family: cursive;
-    }
+tabmenu .content .item .col-lg-3 .productcart .productinfo .pricelike .showmore {
+    border: none;
+    background-color: white;
+    color: #282828;
+    padding: 7px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: cursive;
+}
 
-    #tabmenu .content .item .col-lg-3 .productcart .productinfo .showmore:hover {
-        border: 1px solid green;
-        background-color: white;
-        color: green;
-        font-weight: 500;
-    }
 
-#tabmenu .content .item .col-lg-3 .productcart .productinfo .rating {
+tabmenu .content .item .col-lg-3 .productcart .productinfo .pricelike .showmore i {
+  
+    color:#dc9814;
+}
+
+
+/*#tabmenu .content .item .col-lg-3 .productcart .productinfo .rating {
   position: relative;
   float: right;
 }
@@ -739,7 +744,7 @@ swiper-container swiper-slide img {
 #tabmenu .content .item .col-lg-3 .productcart .productinfo .rating i {
   color: #dc9814;
   font-size: 16px;
-}
+}*/
 
 #latestblog {
   margin-top: 65px;

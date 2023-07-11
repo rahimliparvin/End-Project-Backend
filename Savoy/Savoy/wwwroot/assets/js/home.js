@@ -5,22 +5,22 @@
 let shopBtn = document.querySelector(".shopBtn");
 
 
-shopBtn.addEventListener("mouseover",function(e){
+shopBtn.addEventListener("mouseover", function (e) {
     e.preventDefault();
     let shopPage = document.querySelector(".shop-pages");
     shopPage.classList.remove("d-none");
 })
 
-shopBtn.addEventListener("mouseout",function(e){
+shopBtn.addEventListener("mouseout", function (e) {
     e.preventDefault();
     let shopPage = document.querySelector(".shop-pages");
     shopPage.classList.add("d-none");
 
-    shopPage.addEventListener("mouseover", function(){
+    shopPage.addEventListener("mouseover", function () {
         shopPage.classList.remove("d-none");
     })
 
-    shopPage.addEventListener("mouseout", function(){
+    shopPage.addEventListener("mouseout", function () {
         shopPage.classList.add("d-none");
     })
 })
@@ -30,22 +30,22 @@ shopBtn.addEventListener("mouseout",function(e){
 
 let categoriesBtn = document.querySelector(".categoriesBtn");
 
-categoriesBtn.addEventListener("mouseover",function(e){
+categoriesBtn.addEventListener("mouseover", function (e) {
     e.preventDefault();
     let categoriesTitle = document.querySelector(".categoriestitle");
     categoriesTitle.classList.remove("d-none");
 })
 
-categoriesBtn.addEventListener("mouseout",function(e){
+categoriesBtn.addEventListener("mouseout", function (e) {
     e.preventDefault();
     let categoriesTitle = document.querySelector(".categoriestitle");
     categoriesTitle.classList.add("d-none");
 
-    categoriesTitle.addEventListener("mouseover", function(){
+    categoriesTitle.addEventListener("mouseover", function () {
         categoriesTitle.classList.remove("d-none");
     })
 
-    categoriesTitle.addEventListener("mouseout", function(){
+    categoriesTitle.addEventListener("mouseout", function () {
         categoriesTitle.classList.add("d-none");
     })
 })
@@ -55,22 +55,22 @@ categoriesBtn.addEventListener("mouseout",function(e){
 let pagesBtn = document.querySelector(".pagesBtn");
 
 
-pagesBtn.addEventListener("mouseover",function(e){
+pagesBtn.addEventListener("mouseover", function (e) {
     e.preventDefault();
     let pages = document.querySelector(".pages");
     pages.classList.remove("d-none");
 })
 
-pagesBtn.addEventListener("mouseout",function(e){
+pagesBtn.addEventListener("mouseout", function (e) {
     e.preventDefault();
     let pages = document.querySelector(".pages");
     pages.classList.add("d-none");
 
-    pages.addEventListener("mouseover", function(){
+    pages.addEventListener("mouseover", function () {
         pages.classList.remove("d-none");
     })
 
-    pages.addEventListener("mouseout", function(){
+    pages.addEventListener("mouseout", function () {
         pages.classList.add("d-none");
     })
 })
@@ -82,18 +82,17 @@ let headers = document.querySelectorAll("#tabmenu .tab-menu .item");
 let contents = document.querySelectorAll("#tabmenu .content .item");
 
 headers.forEach(element => {
-    element.addEventListener("click", function(){
+    element.addEventListener("click", function () {
         document.querySelector("#tabmenu .tab-menu .active").classList.remove("active");
         this.classList.add("active");
 
         contents.forEach(content => {
-          if(content.getAttribute("data-id") == this.getAttribute("data-id"))
-          {
-            content.classList.remove("d-none");
-          }
-          else{
-            content.classList.add("d-none");
-          }
+            if (content.getAttribute("data-id") == this.getAttribute("data-id")) {
+                content.classList.remove("d-none");
+            }
+            else {
+                content.classList.add("d-none");
+            }
         });
 
     })
@@ -103,45 +102,23 @@ headers.forEach(element => {
 let firstImgs = document.querySelectorAll("#tabmenu .content .item .productcart .firstimg");
 
 firstImgs.forEach(firstImg => {
-    
-    firstImg.addEventListener("mouseover", function(){
+
+    firstImg.addEventListener("mouseover", function () {
         this.classList.add("d-none");
     })
 
     let secondImgs = document.querySelectorAll("#tabmenu .content .item .productcart .secondimg");
 
     secondImgs.forEach(secondImg => {
-        secondImg.addEventListener("mouseout", function(){
+        secondImg.addEventListener("mouseout", function () {
             firstImg.classList.remove("d-none");
         })
-    
+
     });
 });
 
 
-//////////////// wishlist icon heart //////
-
-let hearts = document.querySelectorAll(".content .productcart .like");
-
-hearts.forEach(heart => {
-    
-    heart.addEventListener("click",function(){
-
-        this.classList.add("d-none");
-        this.nextElementSibling.classList.remove("d-none");
-})
-});
-
-
-let likeHearts = document.querySelectorAll(".content .productcart .fa-solid");
-
-likeHearts.forEach(likeHeart => {
-    
-    likeHeart.addEventListener("click",function(){
-
-        this.classList.add("d-none");
-        this.previousElementSibling.classList.remove("d-none");
-})
-});
-
 ///////////////////
+
+
+

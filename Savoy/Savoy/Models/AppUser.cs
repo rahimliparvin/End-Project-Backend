@@ -8,6 +8,8 @@ namespace Savoy.Models
         public string LastName { get; set; }
         public bool RememberMe { get; set; } = false;
 
+        public ICollection<ProductComment> ProductComments { get; set; }
+
         public ICollection<BasketItem> BasketItems { get; set; }
 
 

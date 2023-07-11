@@ -1,4 +1,4 @@
-﻿
+﻿@model List<BasketItem>
 @{
     ViewData["Title"] = "Checkout";
 }
@@ -131,45 +131,115 @@
                 </div>
 
 
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                @if (Model.Count > 0)
+                {
+                    <div class="col-lg-6 col-md-12 col-sm-12">
 
 
-                    <div class="productsaleinfos">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Count</th>
+                                    <th scope="col">TotalPrice</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Product.Name</td>
+                                        <td>@item.Product.Price</td>
+                                        <td>@item.Count</td>
+                                        <td>@(item.Product.Price * item.Count)</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
 
-                        <div class="product-total">
-                            <h5>Product</h5><span>Total</span>
-
-                        </div>
-
-                        <ul class="productscart">
-                            <p>There are no products in cart</p>
-                        </ul>
-
-                        <ul class="subtotalprice">
-                            <li>
-                                <h5>Subtotal</h5> <span>$</span><span>0</span><span>.00</span>
-                            </li>
-                        </ul>
 
 
-                        <ul class="totalprice">
-                            <li>
-                                <h5>Total</h5> <span>$</span><span>0</span><span>.00</span>
-                            </li>
-                        </ul>
+
+
+
+
+
+
+                       @* @foreach (var item in Model)
+                        {
+                            decimal subtotalPrice =+(@item.Product.Price * @item.Count);
+      
+                        }
+
+                        <h5 style="text-align:end;">Subtotal</h5>
+                        <h3 style="text-align:end;"><span style="color:red;">$</span><span style="color:red;">@ViewBag.SubTotalPrice</span></h3>*@
+
+
+
 
                         <div class="input">
-                            <div class="directbank">
-                                <input name="a" type="radio"><span>Direct Bank Transfer</span>
+
+
+                            <div style="display:end;;margin-left:40px;">
+                                <input style="display:block;" id="a" name="a" type="radio"><span>Direct Bank Transfer</span>
+
+                                <input id="a" style="display:block;" name="a" type="radio"><span>PayPal</span>
+
+                                <button style="display:block ;border:none;background:green;color:white;padding:10px;border-radius:7px;margin-top:20px;" type="submit"><span>Place order</span></button>
                             </div>
-                            <div class="paypal">
-                                <input name="a" type="radio"><span>PayPal</span>
-                            </div>
-                            <button type="submit"><span>Place order</span></button>
+
+
+
                         </div>
                     </div>
 
-                </div>
+
+                }
+                else
+                {
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+
+
+                        <div class="productsaleinfos">
+
+                            <div class="product-total">
+                                <h5>Product</h5><span>Total</span>
+
+                            </div>
+
+                            <ul class="productscart">
+                                <p>There are no products in cart</p>
+                            </ul>
+
+                            <ul class="subtotalprice">
+                                <li>
+                                    <h5>Subtotal</h5> <span>$</span><span>0</span><span>.00</span>
+                                </li>
+                            </ul>
+
+
+                            <ul class="totalprice">
+                                <li>
+                                    <h5>Total</h5> <span>$</span><span>0</span><span>.00</span>
+                                </li>
+                            </ul>
+
+                            <div class="input">
+                                <div class="directbank">
+                                    <input name="a" type="radio"><span>Direct Bank Transfer</span>
+                                </div>
+                                <div class="paypal">
+                                    <input name="a" type="radio"><span>PayPal</span>
+                                </div>
+                                <button type="submit"><span>Place order</span></button>
+                            </div>
+                        </div>
+
+                    </div>
+                }
+
+
             </div>
         </div>
         </div>

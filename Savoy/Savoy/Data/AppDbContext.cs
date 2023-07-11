@@ -27,6 +27,10 @@ namespace Savoy.Data
         public DbSet<ProductColor> ProductColors { get; set; }
         public DbSet<BasketItem> BasketItems { get; set; }
         public DbSet<WishlistItem> WishlistItems { get; set; }
+        public DbSet<ProductComment> ProductComments { get; set; }
+        public DbSet<ContactForm> ContactForms { get; set; }
+
+
 
 
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Savoy.Areas.Admin.ViewModels.BlogVM;
 using Savoy.Areas.Admin.ViewModels.SliderVM;
@@ -7,9 +8,11 @@ using Savoy.Helpers;
 using Savoy.Models;
 using Savoy.Service.Interfaces;
 using Savoy.ViewModels;
+using System.Data;
 
 namespace Savoy.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class BlogController : Controller
     {

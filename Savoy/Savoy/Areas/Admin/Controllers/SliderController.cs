@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ProniaBackEndProject.Areas.Admin.ViewModels;
 using Savoy.Areas.Admin.ViewModels.SliderVM;
@@ -6,11 +7,13 @@ using Savoy.Data;
 using Savoy.Helpers;
 using Savoy.Models;
 using Savoy.Service.Interfaces;
+using System.Data;
 
 namespace Savoy.Areas.Admin.Controllers
 {
-	[Area("Admin")]
-	public class SliderController : Controller
+    [Authorize(Roles = "Admin")]
+    [Area("Admin")]
+    public class SliderController : Controller
 	{
 		private readonly AppDbContext _context;
 		private readonly ISliderService _sliderService;

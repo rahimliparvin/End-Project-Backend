@@ -452,7 +452,6 @@
 
 
 #carouselshop {
-
     background-color: #f0eded;
     padding-top: 50px;
 
@@ -473,7 +472,6 @@
                     margin-left: 10px;
                     color: #282828;
                     font-size: 15px;
-
                 }
 
                 li:nth-child(5) {
@@ -483,7 +481,6 @@
         }
 
         .carousel-fade {
-
             width: 595px;
             height: 737px;
 
@@ -492,9 +489,8 @@
 
                 img {
                     height: 737px;
-                    object-fit:none;
+                    object-fit: none;
                 }
-
             }
 
             .carousel-control-next-icon {
@@ -519,7 +515,6 @@
         }
 
         .productinfos {
-
             width: 80%;
             padding-top: 120px;
             padding-left: 100px;
@@ -539,7 +534,6 @@
             }
 
             p {
-
                 color: #686868;
                 line-height: 32px;
                 margin-bottom: 20px;
@@ -547,7 +541,6 @@
             }
 
             .rating {
-
                 margin-bottom: 15px;
 
                 i {
@@ -564,22 +557,18 @@
                 border: 1px solid #A0A0A0;
                 padding-left: 10px;
                 font-weight: 500;
-
             }
 
 
 
             option {
-
                 border: 1px solid #A0A0A0;
                 color: #282828;
                 margin-top: 10px;
                 font-weight: 500;
-
             }
 
             .quantity {
-
                 width: 350px;
                 height: 40px;
                 background-color: #eee;
@@ -617,22 +606,13 @@
 
                         i {
                             margin-top: 9px;
-
                         }
-
-
                     }
 
                     li:nth-child(2) {
                         margin-left: 140px;
                     }
                 }
-
-
-
-
-
-
             }
 
             button {
@@ -645,16 +625,10 @@
                 border: none;
                 outline: none;
             }
-
-
-
         }
-
-
     }
 
     .productdetail {
-
         margin-top: 50px;
 
         ul {
@@ -669,14 +643,12 @@
             }
         }
 
-        .active{
-            
+        .active {
             color: #282828;
             border-bottom: 1px solid #AAAAAA;
         }
 
         .descriptioninfo {
-
             width: 100%;
             margin-top: 50px;
             padding-left: 100px;
@@ -689,39 +661,69 @@
             }
         }
 
-        .additionalinfo {
-
+        .comments {
             width: 100%;
             margin-top: 50px;
             padding-left: 100px;
             padding-right: 100px;
 
-           table{
+            .comment {
 
-            thead{
-
-                tr{
-
-                    height: 45px;
-
-                    td:nth-child(1){
-                        color: #282828;
-                        font-size: 18px;
-                    }
-
-                    td:nth-child(2){
-                        color: #686868;
-                        font-size: 16px;
-                        padding-left: 150px;
-                    }
-                    
+                h2 {
+                    color: #282828;
                 }
 
-                
+                p {
+                    color: #686868;
+                    line-height: 30px;
+                }
             }
-           }
+
+            input {
+                border: 1px solid black;
+                outline: none;
+                width: 50%;
+                border-radius: 7px;
+                height: 100px;
+                padding: 20px;
+            }
+
+            button {
+                width: 135px;
+                height: 40px;
+                border: 1px solid black;
+                border-radius: 5px;
+                color: black;
+            }
         }
 
+        .additionalinfo {
+            width: 100%;
+            margin-top: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+
+            table {
+
+                thead {
+
+                    tr {
+                        height: 45px;
+
+                        td:nth-child(1) {
+                            color: #282828;
+                            font-size: 18px;
+                        }
+
+                        td:nth-child(2) {
+                            color: #686868;
+                            font-size: 16px;
+                            padding-left: 150px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
@@ -744,11 +746,9 @@
                     color: #A0A0A0;
                     font-size: 14px;
                 }
-
             }
         }
     }
-
 }
 
 

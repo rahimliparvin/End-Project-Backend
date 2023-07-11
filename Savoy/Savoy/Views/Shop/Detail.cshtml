@@ -81,13 +81,13 @@
                             }
 
                         </div>
-                        <select name="colorId" id="">
+                       @* <select name="colorId" id="">
                             <option selected default value="">@Model.ProductColors.FirstOrDefault()</option>
                            @foreach (var color in Model.ProductColors.Skip(1))
                             {
                                 <option value="">@color</option>
                             }
-                        </select>
+                        </select>*@
                         <form asp-controller="Shop"asp-action="AddBasket" asp-route-id="@Model.Id">
                         <div class="quantity">
 
@@ -120,6 +120,7 @@
                         <ul>
                             <li data-id="1" class="active">Description</li>
                             <li data-id="2">Additional information</li>
+                            <li data-id="3">Comments</li>
                         </ul>
                     </div>
                     <div class="content">
@@ -151,6 +152,26 @@
                                     </tr>
                                 </thead>
                             </table>
+                        </div>
+
+                        <div data-id="3" class="comments d-none">
+
+
+                            <div class="comment" >
+                                <h2>UserName</h2>
+                                <p>Loremdscvnskjdncvdsncvoajsdfnovjadsfnv;ajdfsnv;ufdohnv;osudifhg; hgpuiosrghpklvnmdsaikvnaosinvh</p>
+                            </div>
+
+                        
+                            <form asp-controller="Shop" asp-action="AddComment" asp-route-userId="" asp-route-productId="@Model.Id">
+
+                                <input type="text" />
+
+                                <button type="submit">Add comment</button>
+                            </form>
+                        
+                              
+                           
                         </div>
                     </div>
                 </div>
